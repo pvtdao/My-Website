@@ -1,0 +1,185 @@
+//Hiệu ứng khi bấm explore
+@-webkit-keyframes slide-out-container {
+  0% {
+    width: 100vw;
+  }
+
+  40% {
+    width: 100vw;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+@keyframes slide-out-container {
+  0% {
+    width: 100vw;
+  }
+
+  40% {
+    width: 100vw;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+// Hiệu ứng chữ nhấp nháy
+@-webkit-keyframes blink {
+  0% {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    -webkit-text-stroke: 2px #000;
+    -webkit-text-fill-color: #fff;
+  }
+  100% {
+    -webkit-text-stroke: 0.5px #fff;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes blink {
+  0% {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    -webkit-text-stroke: 2px #000;
+    -webkit-text-fill-color: #fff;
+  }
+  100% {
+    -webkit-text-stroke: 0.5px #fff;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+//Nút explore
+@-webkit-keyframes slide-out {
+  0% {
+    opacity: 0;
+    -webkit-text-stroke: 2px #161616;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    opacity: 1;
+    -webkit-text-stroke: 2px #161616;
+    -webkit-text-fill-color: transparent;
+  }
+  69% {
+    opacity: 0;
+
+    -webkit-text-stroke: 2px #161616;
+    -webkit-text-fill-color: transparent;
+  }
+  // 100%{
+  //     -webkit-text-stroke: 2px #161616;
+  //     -webkit-text-fill-color: transparent;
+  // }
+}
+@keyframes slide-out {
+  0% {
+    opacity: 0;
+    -webkit-text-stroke: 2px #161616;
+    -webkit-text-fill-color: transparent;
+  }
+  25% {
+    opacity: 1;
+    -webkit-text-stroke: 2px #161616;
+    -webkit-text-fill-color: transparent;
+  }
+  69% {
+    opacity: 0;
+
+    -webkit-text-stroke: 2px #161616;
+    -webkit-text-fill-color: transparent;
+  }
+  // 100%{
+  //     -webkit-text-stroke: 2px #161616;
+  //     -webkit-text-fill-color: transparent;
+  // }
+}
+
+@-webkit-keyframes show-intro {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show-intro {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// Hiệu ứng chữ chạy trong menu
+@-webkit-keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-20%, 0, 0);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-20%, 0, 0);
+  }
+}
+
+@-webkit-keyframes textRunner {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes textRunner {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes scrollingSkill {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 *#{$marquee-element-width}*#{$marquee-element})
+    );
+  }
+}
+@keyframes scrollingSkill {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 *#{$marquee-element-width}*#{$marquee-element})
+    );
+  }
+}

@@ -1,0 +1,67 @@
+.skill {
+  padding: 80px 0px;
+  background-color: $black-light-color;
+
+
+  &__marquee {
+    width: $marquee-width;
+    height: $marquee-height;
+    background-color: $black-light-color;
+    overflow: hidden;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 15rem;
+      height: 100%;
+      z-index: 1;
+    }
+
+    &:before {
+      left: 0;
+      background: linear-gradient(to right, #161616 0%, transparent 100%);
+    }
+
+    &:after {
+      right: 0;
+      background: linear-gradient(to left, #161616 0%, transparent 100%);
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      height: 20vh;
+      color: $white-color;
+      transition: all 0.3s linear;
+      -webkit-animation: scrollingSkill $marquee-duration linear infinite;
+              animation: scrollingSkill $marquee-duration linear infinite;
+
+      &:hover {
+        -webkit-animation-play-state: running;
+                animation-play-state: running;
+      }
+    }
+
+    &-item {
+      align-items: center;
+      justify-content: center;
+      width: $marquee-element-width;
+      flex-shrink: 0;
+      font-size: calc(#{$marquee-height}* 2 / 3);
+      white-space: nowrap;
+
+      & i {
+        color: $white-color;
+      }
+    }
+  }
+
+  &__title {
+    @include title(#000, #fff);
+    margin-bottom: 80px;
+    text-align: center;
+  }
+}

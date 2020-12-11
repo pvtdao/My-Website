@@ -1,0 +1,34 @@
+// @font-face {
+//     font-family: Gilroy;
+//     src: url('/assets/fonts/Gilroy-Light.otf');
+// }
+@font-face {
+    font-family: "Monument Extended";
+    src: url('/assets/fonts/MonumentExtended-Regular.otf');
+}
+
+*{
+    box-sizing: inherit;    
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @include responsive(MobileTablet){
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}

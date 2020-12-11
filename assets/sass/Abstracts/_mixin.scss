@@ -1,0 +1,36 @@
+@mixin responsive ($breakpoint) {
+    @if $breakpoint == Mobile {
+        @media (max-width: 739px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == MobileTablet {
+        @media (max-width: 1023px){
+            @content
+        };
+    }  
+
+    @if $breakpoint == Tablet {
+        @media (min-width: 740px) and (max-width: 1023px){
+            @content;
+        };
+    }
+
+    @if $breakpoint == WidePC {
+        @media (min-width: 1023px){
+            @content;
+        }
+    }
+}
+
+@mixin title($text-stroke: #161616, $fill-color: transparent){
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-text-stroke: 1px $text-stroke;
+    -webkit-text-fill-color: $fill-color;
+    font-weight: 900;
+
+    @content;
+}

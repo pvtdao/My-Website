@@ -1,0 +1,18 @@
+// Color scheme
+$white-color: #fff;
+$black-color: #000;
+$black-light-color: #161616;
+$blue-color: #000080;
+$gray-color: #c0c0c0;
+$green-color: #21bf73;
+
+$bdr-normal: 3px;
+$bdr-medium: 5px;
+$bdr-high: 10px;
+
+$marquee-height: 20vh;
+$marquee-width: 80vw;
+$marquee-element: 9;
+$marquee-element-displayed: 4;
+$marquee-element-width: calc(#{$marquee-width}/#{$marquee-element-displayed});
+$marquee-duration: calc(#{$marquee-element}*2s);
