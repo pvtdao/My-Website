@@ -27,8 +27,11 @@
             border: .1px solid rgba(0, 0, 0, 0.3);
             // opacity: .8;
             // filter: sepia(.2) brightness(.9) contrast(1.2);
-            filter: grayscale(100);
-            -webkit-filter: grayscale(100);
+            // filter: grayscale(100);
+            // -webkit-filter: grayscale(100);
+            filter:  contrast(84%) saturate(50%) ;
+
+            
             border-radius: $bdr-normal;
             -webkit-border-radius: $bdr-normal;
             -moz-border-radius: $bdr-normal;
@@ -78,6 +81,10 @@
                 filter: grayscale(0);
     }
 
+    & > img{
+        // mix-blend-mode: lighten;
+    }
+    
     &-1{
         grid-column: 1;
         grid-row: 2 / span 3;

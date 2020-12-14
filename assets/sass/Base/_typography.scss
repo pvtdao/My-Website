@@ -4,14 +4,11 @@
 }
 
 @font-face {
-    font-family: 'nezuko';
-    src: url('/assets/fonts/TextFonts.net_nezuko-typeface/Nezuko.otf') format('opentype'),
-         url('/assets/fonts/TextFonts.net_nezuko-typeface/Webfont/Nezuko.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    font-family: Kontainer;
+    src: url('/assets/fonts/Kontanter/OTF/Kontanter-Bold.otf') format('opentype')
 }
 
 @font-face {
-    font-family: Kontainer;
-    src: url('/assets/fonts/Kontanter/OTF/Kontanter-Bold.otf') format('opentype')
+    font-family: test;
+    src: url('/assets/fonts/degrassi.ttf');
 }

@@ -18,14 +18,14 @@
     }
 
     &__img{
-        // background: url(../images/3459222.jpg) no-repeat;
-        background: url(../images/home-bg.jpg) no-repeat;
+        background: url(../images/79.jpg) no-repeat;
+        // background: url(../images/home-bg.jpg) no-repeat;
 
         // background-position: 300px 70%;
         // background-attachment: fixed;
         background-size: cover;
-        width: 500px;
-        height: 500px;
+        width: 50%;
+        height: 100%;
         // transition: background-image .4s linear;
 
         & img{
@@ -61,6 +61,8 @@
             // color: $blue-color;
             color: #6a8cc9;
             font-weight: 700;
+            // font-family: 'Kontainer', sans-serif;
+
         }
     }
 
