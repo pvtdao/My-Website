@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Monument Extended";
-  src: url("/assets/fonts/MonumentExtended-Regular.otf"); }
-
 * {
   box-sizing: inherit;
   margin: 0;
@@ -20,6 +16,20 @@ a {
 
 ul li {
   list-style: none; }
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("/assets/fonts/MonumentExtended-Regular.otf"); }
+
+@font-face {
+  font-family: 'nezuko';
+  src: url("/assets/fonts/TextFonts.net_nezuko-typeface/Nezuko.otf") format("opentype"), url("/assets/fonts/TextFonts.net_nezuko-typeface/Webfont/Nezuko.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Kontainer;
+  src: url("/assets/fonts/Kontanter/OTF/Kontanter-Bold.otf") format("opentype"); }
 
 @-webkit-keyframes slide-out-container {
   0% {
@@ -350,8 +360,8 @@ ul li {
     padding: 30px 0; }
   .header__logo {
     color: #fff;
-    font-size: 3.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-family: 'Kontainer', sans-serif;
     -webkit-text-stroke: 1px #161616;
     -webkit-text-fill-color: #fff;
     font-weight: 900;
@@ -671,7 +681,8 @@ ul li {
     height: 20vh;
     background-color: #161616;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
     .skill__marquee:before, .skill__marquee:after {
       content: "";
       position: absolute;

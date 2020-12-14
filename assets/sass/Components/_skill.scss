@@ -1,7 +1,7 @@
 .skill {
   padding: 80px 0px;
   background-color: $black-light-color;
-
+  // display: none;
 
   &__marquee {
     width: $marquee-width;
@@ -9,6 +9,7 @@
     background-color: $black-light-color;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
 
     &:before,
     &:after {
