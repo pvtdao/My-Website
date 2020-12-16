@@ -340,6 +340,7 @@ ul li {
   animation-fill-mode: forwards; }
 
 .wrapper {
+  cursor: url("/assets/images/mouse.jpg"), auto;
   font-family: gilroylight;
   position: relative; }
 
@@ -730,3 +731,70 @@ ul li {
     -webkit-text-fill-color: transparent;
     font-weight: 900;
     text-align: center; }
+  .project__card {
+    margin: auto;
+    background: #fefefe;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 3px 5px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 550px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px; }
+    .project__card-toggle {
+      z-index: 4;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: block;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 24px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: .3s ease;
+      border: 1px solid red; }
+      .project__card-toggle.active {
+        color: white;
+        border-color: white; }
+    .project__card-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      transition: -webkit-clip-path 1s ease;
+      padding: 100px 0 0;
+      overflow: hidden;
+      border-radius: 5px;
+      border: 1px solid #000; }
+    .project__card-main {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      .project__card-main--test {
+        width: 50%;
+        height: 100%;
+        display: table-cell;
+        transition: .3s ease .3s;
+        transform: translate3d(0, 0, 0);
+        vertical-align: top; }
+      .project__card-main--left {
+        transform: translate3d(0, 0, 0);
+        opacity: 0;
+        padding-left: 50px; }
+      .project__card-main--right {
+        transform: translate3d(100px, 0, 0);
+        opacity: 0;
+        padding-left: 30px; }
+    .project__card-title {
+      font-weight: 300;
+      font-size: 3rem;
+      line-height: 1;
+      margin: 0 0 30px; }
+      .project__card-title strong {
+        font-weight: 700;
+        display: block; }
