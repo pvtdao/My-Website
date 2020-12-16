@@ -22,10 +22,6 @@ ul li {
   src: url("/assets/fonts/MonumentExtended-Regular.otf"); }
 
 @font-face {
-  font-family: Kontainer;
-  src: url("/assets/fonts/Kontanter/OTF/Kontanter-Bold.otf") format("opentype"); }
-
-@font-face {
   font-family: test;
   src: url("/assets/fonts/degrassi.ttf"); }
 
@@ -141,13 +137,13 @@ ul li {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translateX(calc(-1 *calc(80vw/4)*9)); } }
+    transform: translateX(calc(-1 *calc(100%/4)*9)); } }
 
 @keyframes scrollingSkill {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translateX(calc(-1 *calc(80vw/4)*9)); } }
+    transform: translateX(calc(-1 *calc(100%/4)*9)); } }
 
 .can-not-scroll {
   overflow-x: hidden;
@@ -171,7 +167,8 @@ ul li {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 200; }
+  z-index: 200;
+  display: none; }
   .intro__part {
     background-color: #161616;
     height: calc(100% / 3); }
@@ -417,15 +414,12 @@ ul li {
   background-color: #161616;
   background: url(https://media.giphy.com/media/Y6T5mHd13JENq/giphy.gif) no-repeat 50% 50%;
   background-size: cover;
+  font-family: "Monument Extended";
   font-family: 'Montserrat', sans-serif;
   padding: 50px 0 50px;
   clip-path: circle(100px at 100% -15%);
-  -webkit-clip-path: circle(100px at 100% -15%);
-  transition: all .9s ease-in-out; }
-  @media (min-width: 1023px) {
-    .menu {
-      transition: all .8s linear;
-      -webkit-clip-path: circle(500px at 80% -80%); } }
+  -webkit-clip-path: circle(100px at 100% -50%);
+  transition: all 1s linear; }
   .menu__item {
     position: relative;
     padding: 10px;
@@ -675,12 +669,14 @@ ul li {
   padding: 80px 0px;
   background-color: #161616; }
   .skill__marquee {
-    width: 80vw;
-    height: 20vh;
+    width: 100%;
+    height: 20rem;
     background-color: #161616;
     overflow: hidden;
     position: relative;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
     .skill__marquee:before, .skill__marquee:after {
       content: "";
       position: absolute;
@@ -708,9 +704,9 @@ ul li {
     .skill__marquee-item {
       align-items: center;
       justify-content: center;
-      width: calc(80vw/4);
+      width: calc(100%/4);
       flex-shrink: 0;
-      font-size: calc(20vh* 2 / 3);
+      font-size: calc(20rem* 2 / 4);
       white-space: nowrap; }
       .skill__marquee-item i {
         color: #fff; }

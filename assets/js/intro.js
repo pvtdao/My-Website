@@ -1,6 +1,6 @@
 //Khi đang ở màn hình intro thì không scroll được
-var body = document.getElementsByTagName('body')
-body[0].classList.add('can-not-scroll')
+// var body = document.getElementsByTagName('body')
+// body[0].classList.add('can-not-scroll')
 
 
 var introSection = document.querySelector('.intro'),

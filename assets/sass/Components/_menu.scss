@@ -13,17 +13,17 @@
     background-color: #161616;
     background: url(https://media.giphy.com/media/Y6T5mHd13JENq/giphy.gif) no-repeat 50%  50%;
     background-size: cover;
-    // font-family: "Monument Extended";
+    font-family: "Monument Extended";
     font-family: 'Montserrat', sans-serif;
     padding: 50px 0 50px;
     clip-path: circle(100px at 100% -15%);
-    -webkit-clip-path: circle(100px at 100% -15%);
-    transition: all .9s ease-in-out;
+    -webkit-clip-path: circle(100px at 100% -50%);
+    transition: all 1s linear;
 
-    @include responsive(WidePC){
-        transition: all .8s linear;
-        -webkit-clip-path: circle(500px at 80% -80%);
-    }
+    // @include responsive(WidePC){
+    //     transition: all .8s linear;
+    //     -webkit-clip-path: circle(500px at 80% -80%);
+    // }
 
     &__item{
         position: relative;

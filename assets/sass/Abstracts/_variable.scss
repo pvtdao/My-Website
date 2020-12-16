@@ -10,8 +10,8 @@ $bdr-normal: 3px;
 $bdr-medium: 5px;
 $bdr-high: 10px;
 
-$marquee-height: 20vh;
-$marquee-width: 80vw;
+$marquee-height: 20rem;
+$marquee-width: 100%;
 $marquee-element: 9;
 $marquee-element-displayed: 4;
 $marquee-element-width: calc(#{$marquee-width}/#{$marquee-element-displayed});

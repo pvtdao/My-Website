@@ -10,6 +10,9 @@
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+    // border: 1px solid #fff;
+    display: flex;
+    align-items: center;
 
     &:before,
     &:after {
@@ -51,7 +54,8 @@
       justify-content: center;
       width: $marquee-element-width;
       flex-shrink: 0;
-      font-size: calc(#{$marquee-height}* 2 / 3);
+      font-size: calc(#{$marquee-height}* 2 / 4);
+      // font-size: calc(#{$marquee-height}* 4 / 8.5);
       white-space: nowrap;
 
       & i {
