@@ -722,7 +722,8 @@ ul li {
     text-align: center; }
 
 .project {
-  padding: 100px 0; }
+  padding: 100px 0;
+  background-color: #000; }
   .project__title {
     text-transform: uppercase;
     font-size: 3.5rem;
