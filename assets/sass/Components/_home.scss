@@ -1,5 +1,5 @@
 .home{
-    // background: url("../images/test-1.jpg") no-repeat center center;
+    // background: url("../images/82.jpg");
     // background: url('/assets/images/about-img.jpg') no-repeat center center;
     // background: url(../images/3459222.jpg) no-repeat center 10%;
     // background-attachment: fixed;
@@ -18,7 +18,11 @@
     }
 
     &__img{
-        background: url(../images/81.jpg) no-repeat;
+        background: url(../images/81.jpg) center center no-repeat;
+        // width:100%; height:100%; 
+    //   background:#fff url(image.jpg) center center no-repeat;
+    //   background-attachment: fixed;
+    //   background-size:100% auto;
         // background: url(../images/home-bg.jpg) no-repeat;
 
         // background-position: 300px 70%;

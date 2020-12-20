@@ -68,4 +68,4 @@ function closeImg(){
     divLarge.style.opacity = 0;
 }
 
-divLarge.hover
+
