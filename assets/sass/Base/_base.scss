@@ -3,29 +3,44 @@
 //     src: url('/assets/fonts/Gilroy-Light.otf');
 // }
 
-
-*{
-    box-sizing: inherit;    
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 
-
-html{
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-
-    @include responsive(MobileTablet){
-        -webkit-tap-highlight-color: transparent;
-    }
+  @include responsive(MobileTablet) {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul li{
-    list-style: none;
+ul li {
+  list-style: none;
+}
+
+.custom-cursor-dark {
+  cursor: url(/assets/images/cursor_dark.png), auto;
+  cursor: -webkit-image-set(
+      url(/assets/images/cursor_dark.png) 1x,
+      url(/assets/images/cursor_dark.png) 2x
+    ),
+    auto;
+}
+
+.custom-cursor-white {
+  cursor: url(/assets/images/cursor_white.png), auto;
+  cursor: -webkit-image-set(
+      url(/assets/images/cursor_white.png) 4 12,
+      url(/assets/images/cursor_white.png) 4 15
+    ),
+    auto;
 }
