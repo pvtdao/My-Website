@@ -11,7 +11,7 @@ var swiper = new Swiper(".project-slider", {
     el: ".project-slider__pagination",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 5000,
-  // }
+  autoplay: {
+    delay: 5000,
+  }
 });
