@@ -1,36 +1,87 @@
-@mixin responsive ($breakpoint) {
-    @if $breakpoint == Mobile {
-        @media (max-width: 739px){
-            @content;
-        }
+@mixin responsive($breakpoint) {
+  @if $breakpoint == Mobile {
+    @media (max-width: 739px) {
+      @content;
     }
+  }
 
-    @if $breakpoint == MobileTablet {
-        @media (max-width: 1023px){
-            @content
-        };
-    }  
-
-    @if $breakpoint == Tablet {
-        @media (min-width: 740px) and (max-width: 1023px){
-            @content;
-        };
+  @if $breakpoint == MobileTablet {
+    @media (max-width: 1023px) {
+      @content;
     }
+  }
 
-    @if $breakpoint == WidePC {
-        @media (min-width: 1023px){
-            @content;
-        }
+  @if $breakpoint == SmallTablet{
+      @media (max-width: 768px){
+          @content;
+      }
+  }
+  
+  @if $breakpoint == Tablet {
+    @media (min-width: 740px) and (max-width: 1023px) {
+      @content;
     }
+  }
+
+  @if $breakpoint == WidePC {
+    @media (min-width: 1023px) {
+      @content;
+    }
+  }
 }
 
-@mixin title($text-stroke: #161616, $fill-color: transparent){
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    font-family: 'Montserrat', sans-serif;
-    -webkit-text-stroke: 1px $text-stroke;
-    -webkit-text-fill-color: $fill-color;
-    font-weight: 900;
+@mixin title($text-stroke: #161616, $fill-color: transparent) {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  -webkit-text-stroke: 1px $text-stroke;
+  -webkit-text-fill-color: $fill-color;
+  font-weight: 900;
 
-    @content;
+  @content;
+}
+
+@mixin button-home() {
+  background: $white-color;
+  position: relative;
+  display: inline-block;
+  border-radius: $bdr-medium;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 15px 20px;
+  margin-top: 25px;
+  outline: none;
+
+  @content;
+
+  &:before {
+    content: "";
+    border-radius: $bdr-medium;
+    position: absolute;
+    background-color: $black-color;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    transition: all 0.4s ease-out;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &:hover::before {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@mixin button-text() {
+  color: $white-color;
+  mix-blend-mode: difference;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  @content;
+
+  font-family: "Montserrat", sans-serif;
 }
