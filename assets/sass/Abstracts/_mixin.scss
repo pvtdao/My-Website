@@ -1,4 +1,10 @@
 @mixin responsive($breakpoint) {
+  @if $breakpoint == SmallMobile {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == Mobile {
     @media (max-width: 739px) {
       @content;
@@ -11,12 +17,6 @@
     }
   }
 
-  @if $breakpoint == SmallTablet{
-      @media (max-width: 768px){
-          @content;
-      }
-  }
-  
   @if $breakpoint == Tablet {
     @media (min-width: 740px) and (max-width: 1023px) {
       @content;

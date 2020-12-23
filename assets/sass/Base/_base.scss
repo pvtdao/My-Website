@@ -28,19 +28,19 @@ ul li {
 }
 
 .custom-cursor-dark {
-  cursor: url(/assets/images/cursor_dark.png), auto;
+  cursor: url('../images/cursor_dark.png'), auto;
   cursor: -webkit-image-set(
-      url(/assets/images/cursor_dark.png) 1x,
-      url(/assets/images/cursor_dark.png) 2x
+      url('../images/cursor_dark.png') 1x,
+      url('../images/cursor_dark.png') 2x
     ),
     auto;
 }
 
 .custom-cursor-white {
-  cursor: url(/assets/images/cursor_white.png), auto;
+  cursor: url('../images/cursor_white.png'), auto;
   cursor: -webkit-image-set(
-      url(/assets/images/cursor_white.png) 4 12,
-      url(/assets/images/cursor_white.png) 4 15
+      url('../images/cursor_white.png') 4 12,
+      url('../images/cursor_white.png') 4 15
     ),
     auto;
 }
