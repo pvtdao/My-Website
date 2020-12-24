@@ -3,9 +3,9 @@ var swiper = new Swiper(".project-slider", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
+  // mousewheel: {
+  //   invert: false,
+  // },
   // autoHeight: true,
   pagination: {
     el: ".project-slider__pagination",

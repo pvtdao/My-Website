@@ -628,6 +628,7 @@ ul li {
     text-align: justify;
     padding: 0 40px; }
   .about__title {
+    position: relative;
     text-transform: uppercase;
     font-size: 3.5rem;
     font-family: "Montserrat", sans-serif;
@@ -719,6 +720,7 @@ ul li {
       .skill__marquee-item i {
         color: #fff; }
   .skill__title {
+    position: relative;
     text-transform: uppercase;
     font-size: 3.5rem;
     font-family: "Montserrat", sans-serif;
@@ -731,6 +733,7 @@ ul li {
 .project {
   padding: 105px 0 30px 0; }
   .project__title {
+    position: relative;
     text-transform: uppercase;
     font-size: 3.5rem;
     font-family: "Montserrat", sans-serif;
@@ -959,3 +962,12 @@ ul li {
             .project-slider__pagination .swiper-pagination-bullet-active {
               height: 20px;
               width: 50px !important; } }
+
+.contact__title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  -webkit-text-stroke: 1px #161616;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900; }

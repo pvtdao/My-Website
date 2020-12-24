@@ -57,7 +57,9 @@
         // -webkit-text-fill-color: transparent;
         // font-weight: 900;
 
-        @include title();
+        @include title(){
+            
+        };
     }
 
     &__text{

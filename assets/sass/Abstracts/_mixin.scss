@@ -31,13 +31,14 @@
 }
 
 @mixin title($text-stroke: #161616, $fill-color: transparent) {
+  position: relative;
   text-transform: uppercase;
   font-size: 3.5rem;
   font-family: "Montserrat", sans-serif;
   -webkit-text-stroke: 1px $text-stroke;
   -webkit-text-fill-color: $fill-color;
   font-weight: 900;
-
+  
   @content;
 }
 

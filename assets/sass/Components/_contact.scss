@@ -1,0 +1,8 @@
+.contact{
+
+    &__title{
+        @include title(){
+            
+        }
+    }
+}
