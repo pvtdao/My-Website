@@ -5,6 +5,12 @@
     }
   }
 
+  @if $breakpoint == MediumMobile {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == Mobile {
     @media (max-width: 739px) {
       @content;
@@ -28,6 +34,12 @@
       @content;
     }
   }
+
+  @if $breakpoint == HightPC {
+    @media (min-height: 1000px) {
+      @content;
+    }
+  }
 }
 
 @mixin title($text-stroke: #161616, $fill-color: transparent) {
@@ -38,7 +50,10 @@
   -webkit-text-stroke: 1px $text-stroke;
   -webkit-text-fill-color: $fill-color;
   font-weight: 900;
-  
+
+  @include responsive(HightPC) {
+    font-size: 5rem;
+  }
   @content;
 }
 

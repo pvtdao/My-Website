@@ -9,6 +9,10 @@
   z-index: 200;
   display: none;
 
+  @include responsive(MobileTablet) {
+    min-height: 100vh;
+  }
+
   &__part {
     background-color: #161616;
     height: calc(100% / 3);
@@ -24,7 +28,7 @@
 
   //Contain bên trong part 2 section, sẽ trượt vào cùng section part 2
   &__container {
-    overflow: hidden;
+    // overflow: hidden;
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -36,11 +40,19 @@
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+
+    @include responsive(Mobile) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around;
+    }
   }
 
   // Chứa các chữ PVTD
   &__content {
-    font-family: 'Kontainer', sans-serif;
+    justify-self: center;
+    font-family: "Kontainer", sans-serif;
     display: inline-block;
     margin-left: 0px;
   }
@@ -62,6 +74,14 @@
     -pie-transition: all 0.5s ease; /*PIE*/
     transition: all 0.5s ease;
     opacity: 1;
+
+    @include responsive(Mobile) {
+      font-size: 5rem;
+    }
+
+    @include responsive(Tablet) {
+      font-size: 6rem;
+    }
 
     &-1 {
       animation: blink 0.2s linear 0.5s;
@@ -153,9 +173,12 @@
     transition: background-color 0.3s linear;
 
     @include responsive(Mobile) {
-      left: 55%;
-      top: 70%;
-      transform: translate(-50%, 100%);
+      // left: 55%;
+      // top: 70%;
+      // transform: translate(-50%, 100%);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 150%);
     }
 
     &-icon {
@@ -170,7 +193,7 @@
       animation: slide-out 2s;
 
       @include responsive(Mobile) {
-        opacity: 0;
+        // opacity: 0;
       }
     }
 

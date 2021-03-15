@@ -52,6 +52,14 @@ var divLarge = document.querySelector("#large-content");
 //Khi click thì lấy src của ảnh
 function getImg(src) {
   var largeImg = document.querySelector("#large-img");
+  let groupImg = document.querySelectorAll(".img-group");
+
+  let imgArr = Array.from(groupImg);
+
+  imgArr.forEach((img) => {
+    img.style.opacity = "0";
+  });
+
   // Truyền cái src ảnh cho ảnh trong cái khung ảnh bự
   largeImg.src = `${src}`;
 
@@ -64,9 +72,16 @@ function closeImg() {
   // Ấn vô hình bự thì ẩn nó đi
   divLarge.style.visibility = "hidden";
   divLarge.style.opacity = 0;
+
+  let groupImg = document.querySelectorAll(".img-group");
+
+  let imgArr = Array.from(groupImg);
+
+  imgArr.forEach((img) => {
+    img.style.opacity = "1";
+  });
 }
 
-
-function goToTop(){
-  $('html').animate({scrollTop: 0});
+function goToTop() {
+  $("html").animate({ scrollTop: 0 });
 }

@@ -1,370 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
 
-    <link rel="icon" href="./assets/images/d.png">
+    <link rel="icon" href="./assets/images/d.png" />
     <!-- normalize - reset css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <!-- Font from google -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Aos lib -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Swiper lib  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- Các cái cần thiết -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.14.0-web/css/all.min.css">
-    <link rel="stylesheet" href="./assets/fonts/GilroyFont/stylesheet.css">
-    <link rel="stylesheet" href="./assets/fonts/Kontanter/stylesheet.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-5.14.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/fonts/GilroyFont/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/fonts/Kontanter/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <!-- ------------------------------ -->
-</head>
+  </head>
 
-<body class="custom-cursor-dark">
+  <body class="custom-cursor-dark">
     <div class="intro custom-cursor-white">
-        <section class="intro__part-1 intro__part"></section>
-        <section class="intro__part-2 intro__part">
-            <!-- Wrapp -->
-            <div class="intro__container">
-                <!-- button -->
-                <div href="#" class="intro__next">
-                    <i class="fa fa-long-arrow-alt-right intro__next-icon" aria-hidden="true"></i>
-                    <span class="intro__next-text">
-                        Explore
-                    </span>
-                </div>
+      <section class="intro__part-1 intro__part"></section>
+      <section class="intro__part-2 intro__part">
+        <!-- Wrapp -->
+        <div class="intro__container">
+          <!-- button -->
+          <div href="#" class="intro__next">
+            <i
+              class="fa fa-long-arrow-alt-right intro__next-icon"
+              aria-hidden="true"
+            ></i>
+            <span class="intro__next-text"> Explore </span>
+          </div>
 
-                <!-- fly in text -->
-                <div class="intro__content">
-                    <span class="intro__text intro__text-1">P</span>
-                    <span class="intro__text intro__text-2">v</span>
-                    <span class="intro__text intro__text-3">t</span>
-                    <span class="intro__text intro__text-4">d</span>
-                </div>
-            </div>
-        </section>
-        <section class="intro__part-3 intro__part"></section>
-
-
-
-
-
+          <!-- fly in text -->
+          <div class="intro__content">
+            <span class="intro__text intro__text-1">P</span>
+            <span class="intro__text intro__text-2">v</span>
+            <span class="intro__text intro__text-3">t</span>
+            <span class="intro__text intro__text-4">d</span>
+          </div>
+        </div>
+      </section>
+      <section class="intro__part-3 intro__part"></section>
     </div>
 
     <!-- Main contain -->
     <div class="wrapper">
-        <header class="header">
-            <div class="grid wide">
-                <div class="header__container">
-                    <span class="header__logo" onclick="goToTop()">PVTD</span>
-                    <div class="header__button-menu" id="btn-menu">
-                        <div class="header__line-1 header__line"></div>
-                        <div class="header__line-2 header__line"></div>
-                        <div class="header__line-3 header__line"></div>
-                        <div class="header__line-4 header__line"></div>
-                    </div>
-
-                    <nav class="menu custom-cursor-white" >
-                        <div class="menu__item menu__item-1">
-                            <a href="#home" class="menu__item-link">Home</a>
-                            <img class="menu__item-img" src="./assets/images/img-1.jpg" />
-                            <div class="marquee">
-                                <div class="marquee__inner">
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                    <span>Home</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu__item menu__item-2">
-                            <a href="#about" class="menu__item-link">About</a>
-                            <img class="menu__item-img" src="./assets/images/img-2.JPG" />
-                            <div class="marquee">
-                                <div class="marquee__inner">
-                                    <span>About</span>
-                                    <span>About</span>
-                                    <span>About</span>
-                                    <span>About</span>
-                                    <span>About</span>
-                                    <span>About</span>
-                                    <span>About</span>
-                                    <span>About</span>
-                                    <span>About</span>
-                                    <span>About</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu__item menu__item-4">
-                            <a href="#skill" class="menu__item-link">Skills</a>
-                            <img class="menu__item-img" src="./assets/images/img-9.jpg" />
-                            <div class="marquee">
-                                <div class="marquee__inner">
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                    <span>Skills</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu__item menu__item-3">
-                            <a href="#project" class="menu__item-link">Project</a>
-                            <img class="menu__item-img" src="./assets/images/img-3.jpg" />
-                            <div class="marquee">
-                                <div class="marquee__inner">
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                    <span>Project</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu__item menu__item-5">
-                            <a href="#contact" class="menu__item-link">Contact</a>
-                            <img class="menu__item-img" src="./assets/images/img-8.jpg" />
-                            <div class="marquee">
-                                <div class="marquee__inner">
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                    <span>Contact</span>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+      <header class="header">
+        <div class="grid wide">
+          <div class="header__container">
+            <span class="header__logo" onclick="goToTop()">PVTD</span>
+            <div class="header__button-menu" id="btn-menu">
+              <div class="header__line-1 header__line"></div>
+              <div class="header__line-2 header__line"></div>
+              <div class="header__line-3 header__line"></div>
+              <div class="header__line-4 header__line"></div>
             </div>
-        </header>
-        <section class="home" id="home">
-            <div class="grid wide">
-                <div class="home__container">
-                    <div class="home__content">
-                        <p class="home__title">My name is <span class="home__title-name" data-text="Dao Phan">Dao
-                                Phan</span></p>
-                        <p class="home__sub">I'm a newbie Front-end Developer. Welcome to my portfolio and feel free to
-                            contact
-                            me if you need anything. Hope you enjoy it!</p>
-                        <a href="#" class="home__contact-btn"><span class="home__contact-text">Contact me</span></a>
-                    </div>
-                    <div class="home__img">
-                    </div>
-                </div>
-        </section>
-        <section class="about" id="about">
-            <div class="grid wide">
-                <div class="about__container">
-                    <div class="about__left">
-                        <div class="about__left-content">
-                            <div class="img-group img-group-2" data-aos="fade-up">
-                                <img src="./assets/images/about-img-2.jpg" alt=""
-                                    class="about__left-img about__left-img-3" onclick="getImg(this.src);">
-                            </div>
-                            <div class="img-group img-group-1" data-aos="fade-up">
-                                <img src="./assets/images/about-img-1.jpg" alt=""
-                                    class="about__left-img about__left-img-1" onclick="getImg(this.src);">
-                            </div>
-                            <div class="img-group img-group-4" data-aos="fade-up">
-                                <img src="./assets/images/about-img-7.jpg" alt=""
-                                    class="about__left-img about__left-img-2" onclick="getImg(this.src);">
-                            </div>
-                            <div class="img-group img-group-3" data-aos="fade-up">
-                                <img src="./assets/images/about-img-3.jpg" alt=""
-                                    class="about__left-img about__left-img-4" onclick="getImg(this.src);">
-                            </div>
 
-                            <div id="large-content" onclick="closeImg();">
-                                <!-- <i class="fa fa-window-close" aria-hidden="true"></i> -->
-                                <img src="#" alt="" id="large-img" title="Click to close.">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about__right">
-                        <div class="about__right-content">
-                            <h2 class="about__title" data-aos="fade-up">hi there</h2>
-                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine">
-                                I’m Phan Vu Thanh Dao, but you can just call me Neil which is my English name.
-                            </p>
-                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine">
-                                <!-- I'm currently a student at University of Science and I majored in Information Technology.
-                                In 2017, I did not know what i am gonna do with this major but after I got exposed to the Web subject... -->
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint velit in neque
-                                dignissimos! Cumque iure sint quod adipisci harum minus, exercitationem natus,
-                                repellendus molestias, eius optio et cum? Amet.
-                            </p>
-                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint velit in neque
-                                dignissimos! Cumque iure sint quod adipisci harum minus, exercitationem natus,
-                                repellendus molestias, eius optio et cum? Amet.
-                            </p>
-                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sint velit in neque
-                                dignissimos! Cumque iure sint quod adipisci harum minus, exercitationem natus,
-                                repellendus molestias, eius optio et cum? Amet.
-                            </p>
-                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum similique corporis
-                                dignissimos deserunt aut rerum quaerat pariatur eveniet quasi, laboriosam tempora
-                                maiores est quas consectetur libero culpa vitae deleniti odit! Quos pariatur repudiandae
-                                temporibus architecto. Unde at harum, odio nisi fugiat fugit esse nulla illum ipsa
-                                blanditiis voluptate asperiores cumque?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="skill custom-cursor-white" id="skill">
-            <div class="grid wide">
-                <div class="skill__container">
-                    <h1 class="skill__title" data-aos="fade-up">What's in my head</h1>
-                    <div class="skill__marquee">
-                        <ul class="skill__marquee-content">
-                            <li class="skill__marquee-item"><i class="fab fa-html5"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-css3-alt"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-bootstrap"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-sass"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-js-square"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-node"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-react"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-github"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-vuejs"></i></li>
-
-                            <!-- Khúc này để lặp lại -->
-                            <li class="skill__marquee-item"><i class="fab fa-html5"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-css3-alt"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-bootstrap"></i></li>
-                            <li class="skill__marquee-item"><i class="fab fa-sass"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="project" id="project">
-            <div class="grid wide">
-                <div class="project__container">
-                    <h1 class="project__title" data-aos="fade-up">Featured projects</h1>
-                    <p class="project__text">These are some of the things I've made and done.</p>
-                </div>
-
-                <div class="project-slider" data-aos="fade-up">
-                  <div class="project-slider__wrp swiper-wrapper">
-                    <div class="project-slider__item swiper-slide">
-                      <div class="project-slider__img">
-                        <img src="./assets/images/project-ml.PNG" alt="Mai Lam English" >
-                        <img src="./assets/images/project-ml2.png" alt="Mai Lam English" >
-                      </div>
-                      <div class="project-slider__content">
-                        <span class="project-slider__code">4 September 2020</span>
-                        <div class="project-slider__title">Mai Lam English</div>
-                        <div class="project-slider__text">A landing page that i made for Mai Lam's english center to introduce his center.</div>
-                        <a href="https://pvtdao.github.io/MaiLamEnglish/" class="project-slider__button" target="_blank">
-                          <span class="project-slider__button-text">
-                            Visit website
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="project-slider__item swiper-slide">
-                      <div class="project-slider__img">
-                        <img src="assets/images/project-sp.PNG" alt="Shopee clone">
-                        <img src="assets/images/project-sp2.png" alt="Shopee clone">
-                      </div>
-                      <div class="project-slider__content">
-                        <span class="project-slider__code">9 October 2020</span>
-                        <div class="project-slider__title">Shopee Clone Website</div>
-                        <div class="project-slider__text">This website is a project of F8's course.
-                           I completed this project after finishing this course</div>
-                        <a href="https://pvtdao.github.io/Clone-Shopee/" class="project-slider__button" target="_blank">
-                          <span class="project-slider__button-text">
-                            Visit website
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="project-slider__item swiper-slide">
-                      <div class="project-slider__img">
-                        <img src="assets/images/project-portfolio.PNG" alt="">
-                        <img src="assets/images/project-portfolio2.png" alt="">
-                      </div>
-                      <div class="project-slider__content">
-                        <span class="project-slider__code">1 November 2020</span>
-                        <div class="project-slider__title">Portfolio Example</div>
-                        <div class="project-slider__text">I found this tutorial on Youtube so I decided to do 
-                          it and I have learnt so much pretty things for my coding skills</div>
-                        <a href="https://pvtdao.github.io/Portfolio-Example/" class="project-slider__button" target="_blank">
-                          <span class="project-slider__button-text">
-                            Visit website
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="project-slider__item swiper-slide">
-                      <div class="project-slider__img">
-                        <img src="assets/images/project-psd.PNG" alt="">
-                        <img src="assets/images/project-psd2.png" alt="">
-                      </div>
-                      <div class="project-slider__content">
-                        <span class="project-slider__code">18 October 2020</span>
-                        <div class="project-slider__title">Landing page PSD file</div>
-                        <div class="project-slider__text">This website based on a PSD file. 
-                          This is the first time i have tried to convert this PSD file into HTMl/CSS code.
-                        </div>
-                        <a href="https://pvtdao.github.io/Dont-Ignore-Your-Dream/" class="project-slider__button" target="_blank">
-                          <span class="project-slider__button-text">
-                            Visit website
-                          </span>
-                        </a>
-                      </div>
-                    </div>
+            <nav class="menu custom-cursor-white">
+              <div class="menu__item menu__item-1">
+                <a href="#home" class="menu__item-link">Home</a>
+                <img class="menu__item-img" src="./assets/images/img-1.jpg" />
+                <div class="marquee">
+                  <div class="marquee__inner">
+                    <span>Home</span>
+                    <span>Home</span>
+                    <span>Home</span>
+                    <span>Home</span>
+                    <span>Home</span>
+                    <span>Home</span>
+                    <span>Home</span>
+                    <span>Home</span>
+                    <span>Home</span>
+                    <span>Home</span>
                   </div>
-                  <div class="project-slider__pagination"></div>
                 </div>
+              </div>
+              <div class="menu__item menu__item-2">
+                <a href="#about" class="menu__item-link">About</a>
+                <img class="menu__item-img" src="./assets/images/img-2.JPG" />
+                <div class="marquee">
+                  <div class="marquee__inner">
+                    <span>About</span>
+                    <span>About</span>
+                    <span>About</span>
+                    <span>About</span>
+                    <span>About</span>
+                    <span>About</span>
+                    <span>About</span>
+                    <span>About</span>
+                    <span>About</span>
+                    <span>About</span>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__item menu__item-4">
+                <a href="#skill" class="menu__item-link">Skills</a>
+                <img class="menu__item-img" src="./assets/images/img-9.jpg" />
+                <div class="marquee">
+                  <div class="marquee__inner">
+                    <span>Skills</span>
+                    <span>Skills</span>
+                    <span>Skills</span>
+                    <span>Skills</span>
+                    <span>Skills</span>
+                    <span>Skills</span>
+                    <span>Skills</span>
+                    <span>Skills</span>
+                    <span>Skills</span>
+                    <span>Skills</span>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__item menu__item-3">
+                <a href="#project" class="menu__item-link">Project</a>
+                <img class="menu__item-img" src="./assets/images/img-3.jpg" />
+                <div class="marquee">
+                  <div class="marquee__inner">
+                    <span>Project</span>
+                    <span>Project</span>
+                    <span>Project</span>
+                    <span>Project</span>
+                    <span>Project</span>
+                    <span>Project</span>
+                    <span>Project</span>
+                    <span>Project</span>
+                    <span>Project</span>
+                    <span>Project</span>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__item menu__item-5">
+                <a href="#contact" class="menu__item-link">Contact</a>
+                <img class="menu__item-img" src="./assets/images/img-8.jpg" />
+                <div class="marquee">
+                  <div class="marquee__inner">
+                    <span>Contact</span>
+                    <span>Contact</span>
+                    <span>Contact</span>
+                    <span>Contact</span>
+                    <span>Contact</span>
+                    <span>Contact</span>
+                    <span>Contact</span>
+                    <span>Contact</span>
+                    <span>Contact</span>
+                    <span>Contact</span>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="home" id="home">
+        <div class="grid wide">
+          <div class="home__container">
+            <div class="home__content" data-aos="fade-up">
+              <!-- <p class="home__title">
+                My name is
+                <span class="home__title-name" data-text="Dao Phan"
+                  >Dao Phan</span
+                >
+              </p> -->
+              <p class="home__sub" data-aos="fade-up">
+                Hi, I’m <span>Dao Phan</span>, a newbie front end developer
+                driven by passion and curiosity. As a developer, I’m listening
+                to people and make complicated things understandable. While
+                coding, I try to keep things simple. I believe in lifelong
+                learning, a good feedback culture, and an open mind
+              </p>
+              <a href="#about" class="scroll-icon"></a>
+              <!-- <a href="#" class="home__contact-btn"
+                ><span class="home__contact-text">Contact me</span></a
+              > -->
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="grid wide">
+          <div class="about__container">
+            <div class="about__left">
+              <div class="about__left-content">
+                <div class="img-group img-group-2" data-aos="fade-up">
+                  <img
+                    src="./assets/images/about-img-2.jpg"
+                    alt=""
+                    class="about__left-img about__left-img-3"
+                    onclick="getImg(this.src);"
+                  />
+                </div>
+                <div class="img-group img-group-1" data-aos="fade-up">
+                  <img
+                    src="./assets/images/about-img-1.jpg"
+                    alt=""
+                    class="about__left-img about__left-img-1"
+                    onclick="getImg(this.src);"
+                  />
+                </div>
+                <div class="img-group img-group-4" data-aos="fade-up">
+                  <img
+                    src="./assets/images/about-img-7.jpg"
+                    alt=""
+                    class="about__left-img about__left-img-2"
+                    onclick="getImg(this.src);"
+                  />
+                </div>
+                <div class="img-group img-group-3" data-aos="fade-up">
+                  <img
+                    src="./assets/images/about-img-3.jpg"
+                    alt=""
+                    class="about__left-img about__left-img-4"
+                    onclick="getImg(this.src);"
+                  />
+                </div>
 
-        <section class="contact" id="contact">
-            <div class="grid wide">
-                <div class="contact__container">
-                    <div class="contact__intro">
-                        <h1 class="contact__title">Keep in touch</h1>
-                        <p class="contact__text">Whether you're interested in my website or just want to say hello, I'd love to hear from you!</p>
-                    </div>
+                <div id="large-content" onclick="closeImg();">
+                  <!-- <i class="fa fa-window-close" aria-hidden="true"></i> -->
+                  <img src="#" alt="" id="large-img" title="Click to close." />
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="about__right">
+              <div class="about__right-content">
+                <h2 class="about__title" data-aos="fade-up">hi there</h2>
+                <p
+                  class="about__text"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                >
+                  I’m Phan Vu Thanh Dao, but you can just call me Neil which is
+                  my English name. My life story goes a little like this.
+                </p>
+                <p
+                  class="about__text"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <!-- I'm currently a student at University of Science and I majored in Information Technology.
+                                In 2017, I did not know what i am gonna do with this major but after I got exposed to the Web subject... -->
+                  I was born and grew up (currently live) in Ho Chi Minh City,
+                  Viet Nam. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Ab sint velit in neque dignissimos! Cumque iure sint
+                  quod adipisci harum minus, exercitationem natus, repellendus
+                  molestias, eius optio et cum? Amet.
+                </p>
+                <p
+                  class="about__text"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                  sint velit in neque dignissimos! Cumque iure sint quod
+                  adipisci harum minus, exercitationem natus, repellendus
+                  molestias, eius optio et cum? Amet.
+                </p>
+                <p
+                  class="about__text"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                  sint velit in neque dignissimos! Cumque iure sint quod
+                  adipisci harum minus, exercitationem natus, repellendus
+                  molestias, eius optio et cum? Amet.
+                </p>
+                <p
+                  class="about__text"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  similique corporis dignissimos deserunt aut rerum quaerat
+                  pariatur eveniet quasi, laboriosam tempora maiores est quas
+                  consectetur libero culpa vitae deleniti odit! Quos pariatur
+                  repudiandae temporibus architecto. Unde at harum, odio nisi
+                  fugiat fugit esse nulla illum ipsa blanditiis voluptate
+                  asperiores cumque?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skill custom-cursor-white" id="skill">
+        <div class="grid wide">
+          <div class="skill__container">
+            <h1 class="skill__title">What's in my head</h1>
+            <div class="skill__marquee">
+              <ul class="skill__marquee-content">
+                <li class="skill__marquee-item">
+                  <i class="fab fa-html5"></i>
+                </li>
+                <li class="skill__marquee-item">
+                  <i class="fab fa-css3-alt"></i>
+                </li>
+                <li class="skill__marquee-item">
+                  <i class="fab fa-bootstrap"></i>
+                </li>
+                <li class="skill__marquee-item"><i class="fab fa-sass"></i></li>
+                <li class="skill__marquee-item">
+                  <i class="fab fa-js-square"></i>
+                </li>
+                <li class="skill__marquee-item"><i class="fab fa-node"></i></li>
+                <li class="skill__marquee-item">
+                  <i class="fab fa-react"></i>
+                </li>
+                <li class="skill__marquee-item">
+                  <i class="fab fa-github"></i>
+                </li>
+                <li class="skill__marquee-item">
+                  <i class="fab fa-vuejs"></i>
+                </li>
+
+                <!-- Khúc này để lặp lại -->
+                <li class="skill__marquee-item">
+                  <i class="fab fa-html5"></i>
+                </li>
+                <li class="skill__marquee-item">
+                  <i class="fab fa-css3-alt"></i>
+                </li>
+                <li class="skill__marquee-item">
+                  <i class="fab fa-bootstrap"></i>
+                </li>
+                <li class="skill__marquee-item"><i class="fab fa-sass"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="project">
+        <div class="grid wide">
+          <div class="project__container">
+            <h1 class="project__title" data-aos="fade-up">Featured projects</h1>
+            <!-- <p class="project__text">
+              These are some of the things I've made and done.
+            </p> -->
+          </div>
+
+          <div class="project-slider" data-aos="fade-up">
+            <div class="project-slider__wrp swiper-wrapper">
+              <div class="project-slider__item swiper-slide">
+                <div class="project-slider__img">
+                  <img
+                    src="./assets/images/project-ml.PNG"
+                    alt="Mai Lam English"
+                  />
+                  <img
+                    src="./assets/images/project-ml2.png"
+                    alt="Mai Lam English"
+                  />
+                </div>
+                <div class="project-slider__content">
+                  <span class="project-slider__code">4 September 2020</span>
+                  <div class="project-slider__title">Mai Lam English</div>
+                  <div class="project-slider__text">
+                    A landing page that i made for Mai Lam's english center to
+                    introduce his center.
+                  </div>
+                  <a
+                    href="https://pvtdao.github.io/MaiLamEnglish/"
+                    class="project-slider__button"
+                    target="_blank"
+                  >
+                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-slider__item swiper-slide">
+                <div class="project-slider__img">
+                  <img src="assets/images/project-sp.PNG" alt="Shopee clone" />
+                  <img src="assets/images/project-sp2.png" alt="Shopee clone" />
+                </div>
+                <div class="project-slider__content">
+                  <span class="project-slider__code">9 October 2020</span>
+                  <div class="project-slider__title">Shopee Clone Website</div>
+                  <div class="project-slider__text">
+                    This website is a project of F8's course. I completed this
+                    project after finishing this course
+                  </div>
+                  <a
+                    href="https://pvtdao.github.io/Clone-Shopee/"
+                    class="project-slider__button"
+                    target="_blank"
+                  >
+                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-slider__item swiper-slide">
+                <div class="project-slider__img">
+                  <img src="assets/images/project-portfolio.PNG" alt="" />
+                  <img src="assets/images/project-portfolio2.png" alt="" />
+                </div>
+                <div class="project-slider__content">
+                  <span class="project-slider__code">1 November 2020</span>
+                  <div class="project-slider__title">Portfolio Example</div>
+                  <div class="project-slider__text">
+                    I found this tutorial on Youtube so I decided to do it and I
+                    have learnt so much pretty things for my coding skills
+                  </div>
+                  <a
+                    href="https://pvtdao.github.io/Portfolio-Example/"
+                    class="project-slider__button"
+                    target="_blank"
+                  >
+                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-slider__item swiper-slide">
+                <div class="project-slider__img">
+                  <img src="assets/images/project-psd.PNG" alt="" />
+                  <img src="assets/images/project-psd2.png" alt="" />
+                </div>
+                <div class="project-slider__content">
+                  <span class="project-slider__code">18 October 2020</span>
+                  <div class="project-slider__title">Landing page PSD file</div>
+                  <div class="project-slider__text">
+                    This website based on a PSD file. This is the first time i
+                    have tried to convert this PSD file into HTMl/CSS code.
+                  </div>
+                  <a
+                    href="https://pvtdao.github.io/Dont-Ignore-Your-Dream/"
+                    class="project-slider__button"
+                    target="_blank"
+                  >
+                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-slider__pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="grid wide">
+          <div class="contact__container">
+            <div class="contact__intro">
+              <h1 class="contact__title">Keep in touch</h1>
+              <p class="contact__text">
+                Whether you're interested in my website or just want to say
+                hello, I'd love to hear from you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- swiper lib -->
@@ -374,9 +487,8 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/intro.js"></script>
+    <!-- <script src="./assets/js/intro.js"></script> -->
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/swiper.js"></script>
-</body>
-
+  </body>
 </html>
