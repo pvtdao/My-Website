@@ -809,15 +809,6 @@ ul li {
     font-size: 1.6rem;
     text-align: center;
     padding: 0 50px; }
-    .project__text:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      transform: translateY(-50%);
-      width: 10%;
-      height: 2px;
-      background-color: #000; }
   .project-slider {
     width: 100%;
     position: relative;
