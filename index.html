@@ -175,21 +175,26 @@
       <section class="home" id="home">
         <div class="grid wide">
           <div class="home__container">
-            <div class="home__content" data-aos="fade-up">
+            <div class="home__content">
               <!-- <p class="home__title">
                 My name is
                 <span class="home__title-name" data-text="Dao Phan"
                   >Dao Phan</span
                 >
               </p> -->
-              <p class="home__sub" data-aos="fade-up">
+              <p
+                class="home__sub"
+                data-aos="fade-up"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 Hi, I’m <span>Dao Phan</span>, a newbie front end developer
                 driven by passion and curiosity. As a developer, I’m listening
                 to people and make complicated things understandable. While
                 coding, I try to keep things simple. I believe in lifelong
                 learning, a good feedback culture, and an open mind
               </p>
-              <a href="#about" class="scroll-icon"></a>
+              <a href="#about" class="scroll-icon" data-aos="fade-up"></a>
               <!-- <a href="#" class="home__contact-btn"
                 ><span class="home__contact-text">Contact me</span></a
               > -->
@@ -465,14 +470,133 @@
         </div>
       </section>
 
-      <section class="contact" id="contact">
+      <section class="contact custom-cursor-white" id="contact">
         <div class="grid wide">
           <div class="contact__container">
             <div class="contact__intro">
-              <h1 class="contact__title">Keep in touch</h1>
-              <p class="contact__text">
+              <h1
+                class="contact__title"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                Keep in touch
+              </h1>
+              <p
+                class="contact__text"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 Whether you're interested in my website or just want to say
-                hello, I'd love to hear from you!
+                hello, I'd love to hear from you! ✌
+              </p>
+            </div>
+            <div class="contact__form">
+              <form action="">
+                <div class="row">
+                  <div class="form-gr center-elm">
+                    <div class="form-gr-info">
+                      <input
+                        type="text"
+                        placeholder="May i know your name?"
+                        class="contact__input mgr-20"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                      />
+                      <input
+                        type="text"
+                        placeholder="And your email too ❣"
+                        class="contact__input"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      />
+                    </div>
+                  </div>
+                  <!-- <div class="form-gr center-elm"></div> -->
+                </div>
+
+                <div class="row">
+                  <div class="form-gr center-elm">
+                    <textarea
+                      placeholder="Message..."
+                      class="contact__input contact__textarea"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-gr center-elm">
+                    <input
+                      type="button"
+                      value="Send"
+                      class="contact__input"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="contact__social">
+              <!-- <p class="contact__social--in">
+                More about me
+              </p> -->
+              <ul class="contact__list">
+                <li
+                  class="contact__list--item"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  <a
+                    href="https://www.facebook.com/PhanVuThanhDao"
+                    target="_blank"
+                    class="contact__list--link"
+                  >
+                    <i
+                      class="fab fa-facebook-f contact__list--icon custom-cursor-white"
+                    ></i>
+                  </a>
+                </li>
+                <li
+                  class="contact__list--item"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <a
+                    href="https://github.com/pvtdao"
+                    target="_blank"
+                    class="contact__list--link"
+                  >
+                    <i
+                      class="fab fa-github contact__list--icon custom-cursor-white"
+                    ></i>
+                  </a>
+                </li>
+                <li
+                  class="contact__list--item"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  <a
+                    href="https://www.instagram.com/_thanhdao_/"
+                    target="_blank"
+                    class="contact__list--link"
+                  >
+                    <i
+                      class="fab fa-instagram contact__list--icon custom-cursor-white"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact__copy-right">
+              <p class="contact__copy-right--content">
+                &copy; Copyright - 2021
+              </p>
+              <p class="contact__copy-right--content">
+                Design & Develop by <span>PVTD</span>
               </p>
             </div>
           </div>

@@ -55,6 +55,7 @@
     // position: relative;
     // top: 0%;
     // transform: translate(0, -100%);
+
     width: 70%;
     margin: 0 auto;
 
@@ -93,8 +94,7 @@
       padding: 0 10px;
     }
 
-    @include responsive(MediumMobile){
-      
+    @include responsive(MediumMobile) {
     }
 
     & span {
@@ -141,5 +141,24 @@
       -ms-user-select: none;
       user-select: none;
     }
+  }
+}
+
+.scroll-icon {
+  // position: absolute;
+  // top: 130%;
+  // bottom: 100%;
+  // left: 50%;
+  margin: 20px auto;
+  display: block;
+  padding: 8px;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(45deg) !important;
+
+  &:hover {
+    //   transform: translateY(10px) rotate(45deg);
   }
 }

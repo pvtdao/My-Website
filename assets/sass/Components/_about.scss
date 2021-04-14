@@ -1,6 +1,17 @@
 .about {
   margin: 30px 0 50px 0;
 
+  @include responsive(HightPC) {
+    padding-top: 50px;
+  }
+
+  @include responsive(Mobile){
+    padding-top: 50px;
+  }
+
+  @include responsive(MediumMobile){
+    padding-top: 70px;
+  }
   // display: none;
 
   &__container {
@@ -9,16 +20,30 @@
     align-items: center;
 
     @include responsive(HightPC) {
-      flex-direction: column-reverse;
+      min-height: 50vh;
     }
+
+    @include responsive(MobileTablet) {
+      flex-direction: column-reverse;
+      min-height: 100vh;
+      padding-top: 50px;
+    }
+
+    @include responsive(Mobile){
+      padding: 0 8px;
+    }
+    
+
+
   }
 
   &__left {
     width: 60%;
     border-radius: $bdr-normal;
 
-    @include responsive(HightPC) {
-      width: 90%;
+    @include responsive(MobileTablet) {
+      width: 100%;
+      margin-top: 20px;
     }
 
     &-content {
@@ -54,6 +79,11 @@
     height: 100%;
     text-align: justify;
     padding: 0 40px;
+
+    @include responsive(MobileTablet) {
+      text-align: left;
+      padding: 0;
+    }
   }
 
   &__title {
@@ -67,9 +97,18 @@
     margin-top: 15px;
 
     @include responsive(HightPC) {
-      font-size: 2.4rem;
+      font-size: 2rem;
       line-height: 2.8rem;
-      margin-bottom: 10px;
+    }
+
+    @include responsive(Tablet) {
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+    }
+
+    @include responsive(Mobile){
+      font-size: 1.4rem;
+      line-height: 1.8rem;
     }
   }
 }
@@ -119,19 +158,4 @@
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: $bdr-high;
-}
-
-.scroll-icon {
-  margin: 20px auto;
-  display: block;
-  padding: 8px;
-  width: 20px;
-  height: 20px;
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
-  transform: rotate(45deg);
-
-  &:hover {
-    //   transform: translateY(10px) rotate(45deg);
-  }
 }

@@ -1,8 +1,124 @@
-.contact{
+.contact {
+  background-color: #000;
+  padding: 20px 0 0 20px;
+  color: #fff;
 
-    &__title{
-        @include title(){
-            
-        }
+  &__title {
+    @include title(#000, #fff) {
+      text-align: center;
     }
+  }
+
+  &__text {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__form {
+    margin-top: 20px;
+  }
+
+  &__input {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    padding: 10px 0 5px 0;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &[type="button"] {
+      background-color: #fff;
+      color: #000;
+      max-width: 100px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 2px;
+
+      &:hover {
+        border-radius: 15px;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+
+  &__social {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  &__list {
+    display: flex;
+
+    &--item {
+      // border: 1px solid #fff;
+      padding: 10px 0;
+      transition: all 0.2s linear;
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+
+    &--link {
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 30px;
+    }
+
+    &--icon {
+      font-size: 4rem;
+      color: #fff;
+    }
+  }
+
+  &__textarea {
+    height: 100px;
+  }
+
+  &__copy-right {
+      display: flex;
+      justify-content: space-between;
+
+    &--content {
+      color: $white-color;
+      font-size: 1.8rem;
+      padding-bottom: 20px;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & span {
+        color: #fff;
+        font-size: 3rem;
+        font-family: "Montserrat", sans-serif;
+        margin-left: 10px;
+        -webkit-text-stroke: 1px #161616;
+        -webkit-text-fill-color: #fff;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.form-gr {
+  width: 70%;
+
+  &-info {
+    display: flex;
+  }
 }

@@ -50,15 +50,21 @@
   -webkit-text-stroke: 1px $text-stroke;
   -webkit-text-fill-color: $fill-color;
   font-weight: 900;
+  width: 100%;
 
   @include responsive(HightPC) {
     font-size: 5rem;
   }
+
+  @include responsive(Mobile){
+    text-align: center;
+    font-size: 3rem;
+  }
   @content;
 }
 
-@mixin button-home() {
-  background: $white-color;
+@mixin button-home($bg-1: $white-color, $bg-2: $black-color) {
+  background: $bg-1;
   position: relative;
   display: inline-block;
   border-radius: $bdr-medium;
@@ -74,7 +80,7 @@
     content: "";
     border-radius: $bdr-medium;
     position: absolute;
-    background-color: $black-color;
+    background-color: $bg-2;
     top: 0;
     left: 0;
     width: 40%;
