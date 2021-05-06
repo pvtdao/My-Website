@@ -8,7 +8,7 @@
 
   position: relative;
   font-family: "Montserrat", sans-serif;
-
+  
   &__container {
     position: relative;
     height: 100vh;
@@ -66,6 +66,10 @@
     @include responsive(MediumMobile) {
       width: 90%;
     }
+
+      @include responsive(Tablet){
+    width: 100%;
+  }
   }
 
   &__title {

@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   z-index: 200;
-  display: none;
+  // display: none;
 
   @include responsive(MobileTablet) {
     min-height: 100vh;

@@ -5,11 +5,11 @@
     padding-top: 50px;
   }
 
-  @include responsive(Mobile){
+  @include responsive(Mobile) {
     padding-top: 50px;
   }
 
-  @include responsive(MediumMobile){
+  @include responsive(MediumMobile) {
     padding-top: 70px;
   }
   // display: none;
@@ -26,15 +26,12 @@
     @include responsive(MobileTablet) {
       flex-direction: column-reverse;
       min-height: 100vh;
-      padding-top: 50px;
+      padding-top: 70px;
     }
 
-    @include responsive(Mobile){
-      padding: 0 8px;
+    @include responsive(Mobile) {
+      padding: 0 10px;
     }
-    
-
-
   }
 
   &__left {
@@ -101,12 +98,16 @@
       line-height: 2.8rem;
     }
 
-    @include responsive(Tablet) {
-      font-size: 2.4rem;
-      line-height: 2.6rem;
+    @include responsive(MobileTablet) {
+      padding: 0 10px;
     }
 
-    @include responsive(Mobile){
+    @include responsive(Tablet) {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+    }
+
+    @include responsive(Mobile) {
       font-size: 1.4rem;
       line-height: 1.8rem;
     }

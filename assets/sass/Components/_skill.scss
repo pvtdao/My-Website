@@ -1,7 +1,16 @@
 .skill {
   padding: 80px 0px;
   background-color: $black-light-color;
+  overflow: hidden;
   // display: none;
+
+  @include responsive(Tablet){
+    // border: 1px solid red;
+  }
+
+  &__container{
+    overflow: hidden;
+  }
 
   &__marquee {
     width: $marquee-width;
@@ -9,10 +18,13 @@
     background-color: $black-light-color;
     overflow: hidden;
     position: relative;
-    margin: 0 auto;
-    // border: 1px solid #fff;
+    // margin: 0 auto;
     display: flex;
     align-items: center;
+
+    @include responsive(Mobile){
+      $marquee-element-displayed: 2;
+    }
 
     &:before,
     &:after {
@@ -22,6 +34,14 @@
       width: 15rem;
       height: 100%;
       z-index: 1;
+
+      @include responsive(Mobile){
+        width: 80px;
+      }
+
+      @include responsive(SmallMobile){
+        content: unset;
+      }
     }
 
     &:before {
@@ -47,6 +67,10 @@
         -webkit-animation-play-state: running;
                 animation-play-state: running;
       }
+
+      @include responsive(Mobile){
+        animation: scrollingSkillMobile $marquee-duration linear infinite;
+      }
     }
 
     &-item {
@@ -55,8 +79,11 @@
       width: $marquee-element-width;
       flex-shrink: 0;
       font-size: calc(#{$marquee-height}* 2 / 4);
-      // font-size: calc(#{$marquee-height}* 4 / 8.5);
       white-space: nowrap;
+
+      @include responsive(Mobile){
+        width: $marquee-element-width-mb;
+      }
 
       & i {
         color: $white-color;

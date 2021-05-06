@@ -10,9 +10,13 @@ $bdr-normal: 3px;
 $bdr-medium: 5px;
 $bdr-high: 10px;
 
-$marquee-height: 20rem;
-$marquee-width: 100%;
-$marquee-element: 9;
+$marquee-height: 200px;
+$marquee-width: 100vw;
+$marquee-element: 8;
 $marquee-element-displayed: 4;
 $marquee-element-width: calc(#{$marquee-width}/#{$marquee-element-displayed});
+// $marquee-element-width: 25vw;
 $marquee-duration: calc(#{$marquee-element}*2s);
+
+$marquee-elm-displayed-mb: 2;
+$marquee-element-width-mb: calc(#{$marquee-width}/#{$marquee-elm-displayed-mb});

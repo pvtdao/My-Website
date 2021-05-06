@@ -56,7 +56,7 @@
     font-size: 5rem;
   }
 
-  @include responsive(Mobile){
+  @include responsive(MobileTablet) {
     text-align: center;
     font-size: 3rem;
   }

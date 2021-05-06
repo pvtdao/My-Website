@@ -1,7 +1,15 @@
 .contact {
   background-color: #000;
-  padding: 20px 0 0 20px;
+  padding: 20px 0 20px 0px;
   color: #fff;
+
+  @include responsive(Tablet){
+    border: 1px solid #151;
+  }
+
+  @include responsive(Mobile){
+    padding: 20px 10px;
+  }
 
   &__title {
     @include title(#000, #fff) {
@@ -32,6 +40,22 @@
     margin: 20px 0;
     resize: none;
 
+    &::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &::-moz-placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &::-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
     &::placeholder {
       color: rgba(255, 255, 255, 0.5);
     }
@@ -59,17 +83,24 @@
     justify-content: center;
     align-items: center;
     margin: 50px 0;
+
+  
   }
 
   &__list {
     display: flex;
+    width: 100%;
+
+    @include responsive(Mobile){
+      justify-content: space-around;
+    }
 
     &--item {
       // border: 1px solid #fff;
       padding: 10px 0;
       transition: all 0.2s linear;
       &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-10px) !important;
       }
     }
 
@@ -92,6 +123,10 @@
   &__copy-right {
       display: flex;
       justify-content: space-between;
+
+      @include responsive(Mobile){
+        flex-direction: column;
+      }
 
     &--content {
       color: $white-color;
@@ -118,7 +153,19 @@
 .form-gr {
   width: 70%;
 
+  @include responsive(Tablet){
+    width: 100%;
+  }
+  
+  @include responsive(Mobile){
+    width: 90%;
+  }
+
   &-info {
     display: flex;
+
+    @include responsive(Mobile){
+      flex-direction: column;
+    }
   }
 }
