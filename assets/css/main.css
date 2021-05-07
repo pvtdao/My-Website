@@ -196,8 +196,17 @@ ul li {
     height: calc(100% / 3); }
     .intro__part-1 {
       border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+      @media (max-width: 739px) {
+        .intro__part-1 {
+          display: none; } }
+    @media (max-width: 739px) {
+      .intro__part-2 {
+        height: 100%; } }
     .intro__part-3 {
       border-top: 1px solid rgba(255, 255, 255, 0.3); }
+      @media (max-width: 739px) {
+        .intro__part-3 {
+          display: none; } }
   .intro__container {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -373,7 +382,7 @@ ul li {
 .wrapper {
   font-family: gilroylight;
   position: relative;
-  overflow-y: hidden; }
+  overflow: hidden; }
 
 .header {
   position: fixed;
@@ -1197,7 +1206,8 @@ ul li {
     margin: 50px 0; }
   .contact__list {
     display: flex;
-    width: 100%; }
+    width: 100%;
+    justify-content: center; }
     @media (max-width: 739px) {
       .contact__list {
         justify-content: space-around; } }

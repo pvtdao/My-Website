@@ -19,10 +19,24 @@
 
     &-1 {
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+      @include responsive(Mobile){
+        display: none;
+      }
+    }
+
+    &-2{
+      @include responsive(Mobile){
+            height: 100%;
+      }
     }
 
     &-3 {
       border-top: 1px solid rgba(255, 255, 255, 0.3);
+      
+      @include responsive(Mobile){
+        display: none;
+      }
     }
   }
 

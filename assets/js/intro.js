@@ -3,6 +3,8 @@ var body = document.getElementsByTagName("body");
 var wrapper = document.querySelector(".wrapper");
 body[0].classList.add("can-not-scroll");
 body[0].style.backGround = "#000";
+
+// Hidden a main content
 wrapper.style.display = "none";
 
 var introSection = document.querySelector(".intro"),
@@ -21,8 +23,30 @@ nextButton.onclick = function (e) {
 
   wrapper.style.display = "block";
 
+  // refresh aos lib
+  AOS.refresh();
+
+  // Create a swiper when explore
+  var swiper = new Swiper(".project-slider", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    // mousewheel: {
+    //   invert: false,
+    // },
+    // autoHeight: true,
+    pagination: {
+      el: ".project-slider__pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+
   setTimeout(() => {
     console.log("removed");
+    
     //Sau khi ấn explore thì cho scroll
     body[0].classList.remove("can-not-scroll");
     introSection.classList.add("intro-hidden");
