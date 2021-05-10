@@ -1,152 +1,152 @@
-.menu{
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    background-color: #161616;
-    background: url(https://media.giphy.com/media/Y6T5mHd13JENq/giphy.gif) no-repeat 50%  50%;
-    background-size: cover;
-    font-family: "Monument Extended";
-    font-family: 'Montserrat', sans-serif;
-    padding: 50px 0 50px;
-    clip-path: circle(100px at 100% -15%);
-    -webkit-clip-path: circle(100px at 100% -50%);
-    transition: all 1s linear;
+.menu {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: #161616;
+  background: url(https://media.giphy.com/media/Y6T5mHd13JENq/giphy.gif)
+    no-repeat 50% 50%;
+  background-size: cover;
+  font-family: "Monument Extended";
+  font-family: "Montserrat", sans-serif;
+  padding: 50px 0 50px;
+  clip-path: circle(100px at 100% -15%);
+  -webkit-clip-path: circle(100px at 100% -50%);
+  transition: all 1s linear;
 
-    &__item{
-        position: relative;
-        padding: 10px;
-        opacity: 0;
-        
-        &-1{
-            transition: opacity 1s ease 0.8s;
-        }
-        &-2{
-            transition: opacity 1s ease 0.7s;
-        }
-        &-3{
-            transition: opacity 1s ease 0.9s;
-        }
-        &-4{
-            transition: opacity 1s ease 1.3s;
-        }
-        &-5{
-            transition: opacity 1s ease 1.5s;
-        }
+  &__item {
+    position: relative;
+    padding: 10px;
+    opacity: 0;
 
-        &.fade{
-            opacity: 1;
-        }
-
-        &-link{
-            display: inline-block;
-            cursor: pointer;
-            position: relative;
-            -webkit-text-stroke: .5px #fff;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-            transition: opacity .4s;
-            font-size: 7rem;
-            font-weight: 900;
-            margin-left: 100px;
-
-            @include responsive(Mobile){
-                margin-left: 0;
-            }
-
-            &:before{
-                all: initial;
-                font-family: sofia-pro, sans-serif;
-                counter-increment: menu;
-                position: absolute;
-                bottom: 60%;
-                left: 0;
-                pointer-events: none;
-            }
-
-            &:hover{
-                transition-duration: .1s;
-                opacity: 0;
-            }
-
-            &:hover ~ .marquee .marquee__inner{
-                -webkit-animation-play-state: running;
-                        animation-play-state: running;
-                opacity: 1;
-                transition-duration: .4s;
-            }
-
-            // &:hover + .menu__item-img{
-            //     opacity: 1;
-            //     transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
-            //     transition: all 0.4s;
-            // }
-        }
-
-        &-img{
-            pointer-events: none;
-            position: absolute;
-            height: 50vh;
-            max-height: 400px;
-            opacity: 0;
-            left: 100%;
-            top: 50%;
-            transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
-
-            @include responsive(Mobile){
-                transform: unset;
-            }
-        }
+    &-1 {
+      transition: opacity 1s ease 0.8s;
     }
+    &-2 {
+      transition: opacity 1s ease 0.7s;
+    }
+    &-3 {
+      transition: opacity 1s ease 0.9s;
+    }
+    &-4 {
+      transition: opacity 1s ease 1.3s;
+    }
+    &-5 {
+      transition: opacity 1s ease 1.5s;
+    }
+
+    &.fade {
+      opacity: 1;
+    }
+
+    &-link {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      -webkit-text-stroke: 0.5px #fff;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      transition: opacity 0.4s;
+      font-size: 7rem;
+      font-weight: 900;
+      margin-left: 100px;
+
+      @include responsive(Mobile) {
+        margin-left: 0;
+      }
+
+      &:before {
+        all: initial;
+        font-family: sofia-pro, sans-serif;
+        counter-increment: menu;
+        position: absolute;
+        bottom: 60%;
+        left: 0;
+        pointer-events: none;
+      }
+
+      &:hover {
+        transition-duration: 0.1s;
+        opacity: 0;
+      }
+
+      &:hover ~ .marquee .marquee__inner {
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+        opacity: 1;
+        transition-duration: 0.4s;
+      }
+
+      // &:hover + .menu__item-img{
+      //     opacity: 1;
+      //     transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+      //     transition: all 0.4s;
+      // }
+    }
+
+    &-img {
+      pointer-events: none;
+      position: absolute;
+      height: 50vh;
+      max-height: 400px;
+      opacity: 0;
+      left: 100%;
+      top: 50%;
+      transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
+
+      @include responsive(Mobile) {
+        transform: unset;
+      }
+    }
+  }
 }
 
-.menu.active{
+.menu.active {
+  clip-path: circle(1400px at 90% -10%);
+  -webkit-clip-path: circle(1400px at 90% -10%);
+  pointer-events: all;
+
+  @include responsive(WidePC) {
     clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -10%);
-    pointer-events: all;
-
-    @include responsive(WidePC){
-        clip-path: circle(1400px at 90% -10%);
-        -webkit-clip-path: circle(2000px at 90% -10%);
-    }
+    -webkit-clip-path: circle(2000px at 90% -10%);
+  }
 }
 
-.marquee{
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    color:#fff;
-    pointer-events: none;
-    mix-blend-mode: difference;
+.marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #fff;
+  pointer-events: none;
+  mix-blend-mode: difference;
 
-    &__inner{
-        width: 100%;
-        display: flex;
-        position: relative;
-        -webkit-animation: marquee 5s linear infinite;
-                animation: marquee 5s linear infinite;
-        -webkit-animation-play-state: paused;
-                animation-play-state: paused;
-        opacity: 0;
-        transition: opacity .1s;
-        
-    }
+  &__inner {
+    width: 100%;
+    display: flex;
+    position: relative;
+    -webkit-animation: marquee 5s linear infinite;
+    animation: marquee 5s linear infinite;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
 
-    & span{
-        // white-space: nowrap;
-        font-size: 7rem;
-        padding: 0 10px;
-        font-weight: 900;
-        line-height: 1.20;
-        font-style: italic;
-        // color: #000;
-    }
+  & span {
+    // white-space: nowrap;
+    font-size: 7rem;
+    padding: 0 10px;
+    font-weight: 900;
+    line-height: 1.2;
+    font-style: italic;
+    // color: #000;
+  }
 }

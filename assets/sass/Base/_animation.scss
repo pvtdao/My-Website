@@ -186,6 +186,17 @@
   }
 }
 
+@-webkit-keyframes scrollingSkillMobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 *#{$marquee-element-width-mb}*#{$marquee-element})
+    );
+  }
+}
+
 @keyframes scrollingSkillMobile {
   0% {
     transform: translateX(0);

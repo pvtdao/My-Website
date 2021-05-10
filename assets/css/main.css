@@ -153,6 +153,12 @@ ul li {
   100% {
     transform: translateX(calc(-1 *calc(100vw/4)*8)); } }
 
+@-webkit-keyframes scrollingSkillMobile {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-1 *calc(100vw/2)*8)); } }
+
 @keyframes scrollingSkillMobile {
   0% {
     transform: translateX(0); }
@@ -398,6 +404,9 @@ ul li {
     flex-direction: row;
     justify-content: space-between;
     padding: 30px 0; }
+    @media (max-width: 739px) {
+      .header__container {
+        padding: 20px 0; } }
   .header__logo {
     color: #fff;
     font-size: 4rem;
@@ -412,6 +421,9 @@ ul li {
     transition: all .1s linear; }
     .header__logo:hover {
       cursor: pointer; }
+    @media (max-width: 739px) {
+      .header__logo {
+        font-size: 3.5rem; } }
   .header__button-menu {
     width: 40px;
     height: 40px;
@@ -459,7 +471,7 @@ ul li {
   background: url(https://media.giphy.com/media/Y6T5mHd13JENq/giphy.gif) no-repeat 50% 50%;
   background-size: cover;
   font-family: "Monument Extended";
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 50px 0 50px;
   clip-path: circle(100px at 100% -15%);
   -webkit-clip-path: circle(100px at 100% -50%);
@@ -484,10 +496,10 @@ ul li {
       display: inline-block;
       cursor: pointer;
       position: relative;
-      -webkit-text-stroke: .5px #fff;
+      -webkit-text-stroke: 0.5px #fff;
       -webkit-text-fill-color: transparent;
       color: transparent;
-      transition: opacity .4s;
+      transition: opacity 0.4s;
       font-size: 7rem;
       font-weight: 900;
       margin-left: 100px; }
@@ -503,13 +515,13 @@ ul li {
         left: 0;
         pointer-events: none; }
       .menu__item-link:hover {
-        transition-duration: .1s;
+        transition-duration: 0.1s;
         opacity: 0; }
       .menu__item-link:hover ~ .marquee .marquee__inner {
         -webkit-animation-play-state: running;
         animation-play-state: running;
         opacity: 1;
-        transition-duration: .4s; }
+        transition-duration: 0.4s; }
     .menu__item-img {
       pointer-events: none;
       position: absolute;
@@ -549,12 +561,12 @@ ul li {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
     opacity: 0;
-    transition: opacity .1s; }
+    transition: opacity 0.1s; }
   .marquee span {
     font-size: 7rem;
     padding: 0 10px;
     font-weight: 900;
-    line-height: 1.20;
+    line-height: 1.2;
     font-style: italic; }
 
 .home {
@@ -696,6 +708,7 @@ ul li {
       -o-object-fit: cover;
       object-fit: cover;
       border: 0.1px solid rgba(0, 0, 0, 0.3);
+      -webkit-filter: contrast(84%) saturate(50%);
       filter: contrast(84%) saturate(50%);
       border-radius: 3px;
       -webkit-border-radius: 3px;
@@ -828,6 +841,7 @@ ul li {
         animation-play-state: running; }
       @media (max-width: 739px) {
         .skill__marquee-content {
+          -webkit-animation: scrollingSkillMobile calc(8*2s) linear infinite;
           animation: scrollingSkillMobile calc(8*2s) linear infinite; } }
     .skill__marquee-item {
       align-items: center;

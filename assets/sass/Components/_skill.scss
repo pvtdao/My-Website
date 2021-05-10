@@ -4,11 +4,11 @@
   overflow: hidden;
   // display: none;
 
-  @include responsive(Tablet){
+  @include responsive(Tablet) {
     // border: 1px solid red;
   }
 
-  &__container{
+  &__container {
     overflow: hidden;
   }
 
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
 
-    @include responsive(Mobile){
+    @include responsive(Mobile) {
       $marquee-element-displayed: 2;
     }
 
@@ -35,11 +35,11 @@
       height: 100%;
       z-index: 1;
 
-      @include responsive(Mobile){
+      @include responsive(Mobile) {
         width: 80px;
       }
 
-      @include responsive(SmallMobile){
+      @include responsive(SmallMobile) {
         content: unset;
       }
     }
@@ -61,15 +61,16 @@
       color: $white-color;
       transition: all 0.3s linear;
       -webkit-animation: scrollingSkill $marquee-duration linear infinite;
-              animation: scrollingSkill $marquee-duration linear infinite;
+      animation: scrollingSkill $marquee-duration linear infinite;
 
       &:hover {
         -webkit-animation-play-state: running;
-                animation-play-state: running;
+        animation-play-state: running;
       }
 
-      @include responsive(Mobile){
-        animation: scrollingSkillMobile $marquee-duration linear infinite;
+      @include responsive(Mobile) {
+        -webkit-animation: scrollingSkillMobile $marquee-duration linear infinite;
+                animation: scrollingSkillMobile $marquee-duration linear infinite;
       }
     }
 
@@ -81,7 +82,7 @@
       font-size: calc(#{$marquee-height}* 2 / 4);
       white-space: nowrap;
 
-      @include responsive(Mobile){
+      @include responsive(Mobile) {
         width: $marquee-element-width-mb;
       }
 

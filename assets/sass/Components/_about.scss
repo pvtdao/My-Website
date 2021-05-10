@@ -60,7 +60,8 @@
       // filter: sepia(.2) brightness(.9) contrast(1.2);
       // filter: grayscale(100);
       // -webkit-filter: grayscale(100);
-      filter: contrast(84%) saturate(50%);
+      -webkit-filter: contrast(84%) saturate(50%);
+              filter: contrast(84%) saturate(50%);
 
       border-radius: $bdr-normal;
       -webkit-border-radius: $bdr-normal;
