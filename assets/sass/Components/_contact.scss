@@ -3,12 +3,34 @@
   padding: 20px 0 20px 0px;
   color: #fff;
 
-  @include responsive(Tablet){
+  @include responsive(Tablet) {
     border: 1px solid #151;
   }
 
-  @include responsive(Mobile){
+  @include responsive(Mobile) {
     padding: 20px 10px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__toast {
+    background: #fff;
+    padding: 15px;
+    font-size: 2rem;
+    background: red;
+    color: blue;
+    border-radius: $bdr-medium;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    z-index: 1;
+    display: none;
   }
 
   &__title {
@@ -24,6 +46,19 @@
 
   &__form {
     margin-top: 20px;
+
+    &-error {
+      // border: 1px solid #fff;
+      width: 70%;
+      margin: 0 auto;
+      // padding: 10px 0;
+      font-size: 2rem;
+
+      text-align: center;
+      background-color: $white-color;
+      color: $black-color;
+      font-weight: 600;
+    }
   }
 
   &__input {
@@ -61,6 +96,7 @@
     }
 
     &[type="button"] {
+      border: 1px solid #000;
       background-color: #fff;
       color: #000;
       max-width: 100px;
@@ -90,7 +126,7 @@
     width: 100%;
     justify-content: center;
 
-    @include responsive(Mobile){
+    @include responsive(Mobile) {
       justify-content: space-around;
     }
 
@@ -120,12 +156,12 @@
   }
 
   &__copy-right {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
-      @include responsive(Mobile){
-        flex-direction: column;
-      }
+    @include responsive(Mobile) {
+      flex-direction: column;
+    }
 
     &--content {
       color: $white-color;
@@ -136,6 +172,11 @@
       align-items: center;
       justify-content: center;
 
+      @include responsive(SmallMobile) {
+        display: flex;
+        flex-direction: column;
+      }
+
       & span {
         color: #fff;
         font-size: 3rem;
@@ -144,6 +185,10 @@
         -webkit-text-stroke: 1px #161616;
         -webkit-text-fill-color: #fff;
         font-weight: 900;
+
+        @include responsive(SmallMobile) {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -152,19 +197,39 @@
 .form-gr {
   width: 70%;
 
-  @include responsive(Tablet){
+  @include responsive(Tablet) {
     width: 100%;
   }
-  
-  @include responsive(Mobile){
+
+  @include responsive(Mobile) {
     width: 90%;
   }
 
   &-info {
     display: flex;
 
-    @include responsive(Mobile){
+    @include responsive(Mobile) {
       flex-direction: column;
+    }
+  }
+
+  &-button {
+    @include button-home($black-color, $white-color) {
+      width: 100px;
+      border: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    & > span {
+      color: #fff;
+      mix-blend-mode: difference;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
     }
   }
 }

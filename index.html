@@ -179,16 +179,19 @@
         <div class="grid wide">
           <div class="home__container">
             <div class="home__content">
-              <p
-                class="home__sub"
-              >
+              <p class="home__sub">
                 Hi, I’m <span>Dao Phan</span>, a newbie front end developer
                 driven by passion and curiosity. As a developer, I’m listening
                 to people and make complicated things understandable. While
                 coding, I try to keep things simple. I believe in lifelong
                 learning, a good feedback culture, and an open mind
               </p>
-              <a href="#about" class="scroll-icon" data-aos="fade-up"></a>
+              <a
+                href="#about"
+                class="scroll-icon"
+                data-aos="fade-up"
+                data-aos-once="true"
+              ></a>
             </div>
           </div>
         </div>
@@ -198,7 +201,11 @@
           <div class="about__container">
             <div class="about__left">
               <div class="about__left-content">
-                <div class="img-group img-group-2" data-aos="fade-up">
+                <div
+                  class="img-group img-group-2"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                >
                   <img
                     src="./assets/images/about-img-2.jpg"
                     alt=""
@@ -206,7 +213,11 @@
                     onclick="getImg(this.src);"
                   />
                 </div>
-                <div class="img-group img-group-1" data-aos="fade-up">
+                <div
+                  class="img-group img-group-1"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                >
                   <img
                     src="./assets/images/about-img-1.jpg"
                     alt=""
@@ -214,7 +225,11 @@
                     onclick="getImg(this.src);"
                   />
                 </div>
-                <div class="img-group img-group-4" data-aos="fade-up">
+                <div
+                  class="img-group img-group-4"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                >
                   <img
                     src="./assets/images/about-img-7.jpg"
                     alt=""
@@ -222,7 +237,11 @@
                     onclick="getImg(this.src);"
                   />
                 </div>
-                <div class="img-group img-group-3" data-aos="fade-up">
+                <div
+                  class="img-group img-group-3"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                >
                   <img
                     src="./assets/images/about-img-3.jpg"
                     alt=""
@@ -239,11 +258,18 @@
             </div>
             <div class="about__right">
               <div class="about__right-content">
-                <h2 class="about__title" data-aos="fade-up">hi there</h2>
+                <h2
+                  class="about__title"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                >
+                  hi there
+                </h2>
                 <p
                   class="about__text"
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                 >
                   I’m Phan Vu Thanh Dao, but you can just call me Neil which is
                   my English name. My life story goes a little like this.
@@ -252,6 +278,7 @@
                   class="about__text"
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                 >
                   <!-- I'm currently a student at University of Science and I majored in Information Technology.
                                 In 2017, I did not know what i am gonna do with this major but after I got exposed to the Web subject... -->
@@ -264,14 +291,17 @@
                   class="about__text"
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                 >
                   My major is Information Technology. This major makes me feel
-                  that i have a supperpower and i guess that a lot of you feel the same way 🙊🙊
+                  that i have a supperpower and i guess that a lot of you feel
+                  the same way 🙊🙊
                 </p>
                 <p
                   class="about__text"
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
                   sint velit in neque dignissimos! Cumque iure sint quod
@@ -282,6 +312,7 @@
                   class="about__text"
                   data-aos="fade-up"
                   data-aos-easing="ease-in-sine"
+                  data-aos-once="true"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
                   similique corporis dignissimos deserunt aut rerum quaerat
@@ -349,13 +380,15 @@
       <section class="project" id="project">
         <div class="grid wide">
           <div class="project__container">
-            <h1 class="project__title" data-aos="fade-up">Featured projects</h1>
+            <h1 class="project__title" data-aos="fade-up" data-aos-once="true">
+              Featured projects
+            </h1>
             <!-- <p class="project__text">
               These are some of the things I've made and done.
             </p> -->
           </div>
 
-          <div class="project-slider" data-aos="fade-up">
+          <div class="project-slider" data-aos="fade-up" data-aos-once="true">
             <div class="project-slider__wrp swiper-wrapper">
               <div class="project-slider__item swiper-slide">
                 <div class="project-slider__img">
@@ -469,6 +502,7 @@
                 class="contact__title"
                 data-aos="zoom-in"
                 data-aos-duration="1000"
+                data-aos-once="true"
               >
                 Keep in touch
               </h1>
@@ -476,13 +510,22 @@
                 class="contact__text"
                 data-aos="fade-up"
                 data-aos-duration="1000"
+                data-aos-once="true"
               >
                 Whether you're interested in my website or just want to say
                 hello, I'd love to hear from you! ✌
               </p>
             </div>
             <div class="contact__form">
-              <form action="">
+              <form
+                action=""
+                onsubmit="return validation(event)"
+                name="contact-form"
+                id="form"
+              >
+                <div class="row">
+                  <div class="contact__form-error"></div>
+                </div>
                 <div class="row">
                   <div class="form-gr center-elm">
                     <div class="form-gr-info">
@@ -492,6 +535,9 @@
                         class="contact__input mgr-20"
                         data-aos="fade-right"
                         data-aos-duration="1000"
+                        data-aos-once="true"
+                        name="name"
+                        id="name"
                       />
                       <input
                         type="text"
@@ -499,6 +545,9 @@
                         class="contact__input"
                         data-aos="fade-left"
                         data-aos-duration="1000"
+                        data-aos-once="true"
+                        name="mail"
+                        id="mail"
                       />
                     </div>
                   </div>
@@ -511,18 +560,22 @@
                       class="contact__input contact__textarea"
                       data-aos="fade-up"
                       data-aos-duration="1000"
+                      data-aos-once="true"
+                      name="message"
+                      id="message"
                     ></textarea>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="form-gr center-elm">
-                    <input
-                      type="button"
-                      value="Send"
-                      class="contact__input"
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                    />
+                  <div
+                    class="form-gr center-elm"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                  >
+                    <button class="form-gr-button" type="submit">
+                      <span>Send</span>
+                    </button>
                   </div>
                 </div>
               </form>
@@ -537,6 +590,7 @@
                   class="contact__list--item"
                   data-aos="fade-right"
                   data-aos-duration="1000"
+                  data-aos-once="true"
                 >
                   <a
                     href="https://www.facebook.com/PhanVuThanhDao"
@@ -552,6 +606,7 @@
                   class="contact__list--item"
                   data-aos="zoom-in"
                   data-aos-duration="1000"
+                  data-aos-once="true"
                 >
                   <a
                     href="https://github.com/pvtdao"
@@ -567,6 +622,7 @@
                   class="contact__list--item"
                   data-aos="fade-left"
                   data-aos-duration="1000"
+                  data-aos-once="true"
                 >
                   <a
                     href="https://www.instagram.com/_thanhdao_/"
@@ -589,6 +645,8 @@
                 Design & Develop by <span>PVTD</span>
               </p>
             </div>
+
+            <div class="contact__toast">Thanks for your message 🦾🦾</div>
           </div>
         </div>
       </section>
@@ -602,6 +660,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/vaildation.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_TyMxpx1mu4ws35L92uLuk");
+      })();
+    </script>
     <script src="./assets/js/intro.js"></script>
   </body>
 </html>

@@ -1155,6 +1155,21 @@ ul li {
   @media (max-width: 739px) {
     .contact {
       padding: 20px 10px; } }
+  .contact__container {
+    position: relative; }
+  .contact__toast {
+    background: #fff;
+    padding: 15px;
+    font-size: 2rem;
+    background: red;
+    color: blue;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1;
+    display: none; }
   .contact__title {
     position: relative;
     text-transform: uppercase;
@@ -1177,6 +1192,14 @@ ul li {
     text-align: center; }
   .contact__form {
     margin-top: 20px; }
+    .contact__form-error {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 2rem;
+      text-align: center;
+      background-color: #fff;
+      color: #000;
+      font-weight: 600; }
   .contact__input {
     position: relative;
     border: none;
@@ -1201,6 +1224,7 @@ ul li {
     .contact__input::placeholder {
       color: rgba(255, 255, 255, 0.5); }
     .contact__input[type="button"] {
+      border: 1px solid #000;
       background-color: #fff;
       color: #000;
       max-width: 100px;
@@ -1253,6 +1277,10 @@ ul li {
       display: flex;
       align-items: center;
       justify-content: center; }
+      @media (max-width: 360px) {
+        .contact__copy-right--content {
+          display: flex;
+          flex-direction: column; } }
       .contact__copy-right--content span {
         color: #fff;
         font-size: 3rem;
@@ -1261,6 +1289,9 @@ ul li {
         -webkit-text-stroke: 1px #161616;
         -webkit-text-fill-color: #fff;
         font-weight: 900; }
+        @media (max-width: 360px) {
+          .contact__copy-right--content span {
+            margin-top: 10px; } }
 
 .form-gr {
   width: 70%; }
@@ -1275,3 +1306,38 @@ ul li {
     @media (max-width: 739px) {
       .form-gr-info {
         flex-direction: column; } }
+  .form-gr-button {
+    background: #000;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 15px 20px;
+    margin-top: 25px;
+    outline: none;
+    width: 100px;
+    border: none; }
+    .form-gr-button:before {
+      content: "";
+      border-radius: 5px;
+      position: absolute;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: 100%;
+      transition: all 0.4s ease-out;
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    .form-gr-button:hover::before {
+      width: 100%;
+      left: 0; }
+    .form-gr-button:hover {
+      cursor: pointer; }
+    .form-gr-button > span {
+      color: #fff;
+      mix-blend-mode: difference;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
