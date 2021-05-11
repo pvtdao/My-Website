@@ -1,10 +1,13 @@
 function validEmail(email) {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   return re.test(String(email).toLowerCase());
 }
 
 function sendMail(fromEmail, fromName, toName, message) {
+  Toast.init();
+
   var tempParams = {
     from_email: fromEmail,
     from_name: fromName,
@@ -16,10 +19,14 @@ function sendMail(fromEmail, fromName, toName, message) {
     .send("service_xq7nrus", "template_65dpjov", tempParams)
     .then((res) => {
       console.log(res.status);
+
+      if (res.status == 200) {
+        Toast.show("I got your message!", "success");
+      } else {
+        Toast.show("Something goes wrong. Try again!", "error");
+      }
     });
 }
-
-function resetForm() {}
 
 function validation(e) {
   e.preventDefault();
@@ -59,7 +66,7 @@ function validation(e) {
   if (message.length == 0) {
     erro_mesage.style.padding = "10px 0";
 
-    text = "Sau something please!";
+    text = "Say something please!";
     erro_mesage.innerHTML = text;
 
     return false;
@@ -70,5 +77,8 @@ function validation(e) {
   sendMail(mail, name, "Neil", message);
 
   form.reset();
+  erro_mesage.style.padding = "0 0";
+  erro_mesage.innerHTML = "";
+
   return true;
 }

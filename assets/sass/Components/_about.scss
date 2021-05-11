@@ -79,8 +79,10 @@
     padding: 0 40px;
 
     @include responsive(MobileTablet) {
-      text-align: left;
+      // text-align: left;
       padding: 0;
+    text-align: justify;
+      
     }
   }
 

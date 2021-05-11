@@ -14,6 +14,9 @@ html {
 a {
   text-decoration: none; }
 
+body {
+  font-family: gilroylight; }
+
 ul li {
   list-style: none; }
 
@@ -574,7 +577,7 @@ ul li {
   font-family: "Montserrat", sans-serif; }
   .home__container {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -723,8 +726,8 @@ ul li {
     padding: 0 40px; }
     @media (max-width: 1023px) {
       .about__right {
-        text-align: left;
-        padding: 0; } }
+        padding: 0;
+        text-align: justify; } }
   .about__title {
     position: relative;
     text-transform: uppercase;
@@ -1157,19 +1160,6 @@ ul li {
       padding: 20px 10px; } }
   .contact__container {
     position: relative; }
-  .contact__toast {
-    background: #fff;
-    padding: 15px;
-    font-size: 2rem;
-    background: red;
-    color: blue;
-    border-radius: 5px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 1;
-    display: none; }
   .contact__title {
     position: relative;
     text-transform: uppercase;
@@ -1200,6 +1190,12 @@ ul li {
       background-color: #fff;
       color: #000;
       font-weight: 600; }
+      @media (min-width: 740px) and (max-width: 1023px) {
+        .contact__form-error {
+          width: 100%; } }
+      @media (max-width: 739px) {
+        .contact__form-error {
+          width: 90%; } }
   .contact__input {
     position: relative;
     border: none;
@@ -1277,7 +1273,7 @@ ul li {
       display: flex;
       align-items: center;
       justify-content: center; }
-      @media (max-width: 360px) {
+      @media (max-width: 739px) {
         .contact__copy-right--content {
           display: flex;
           flex-direction: column; } }
@@ -1341,3 +1337,35 @@ ul li {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none; }
+
+.toast {
+  background: #fff;
+  padding: 15px;
+  font-size: 2rem;
+  border-radius: 5px;
+  top: 100px;
+  left: 0%;
+  right: 0;
+  position: fixed;
+  margin-left: auto;
+  max-width: 400px;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, top 0.2s, visibility 0.2s; }
+  @media (max-width: 739px) {
+    .toast {
+      top: 30%;
+      transform: translateY(-50%); } }
+  .toast > span {
+    margin-left: 10px; }
+  .toast--success {
+    border: 1px solid #21bf73;
+    color: #21bf73; }
+  .toast--error {
+    border: 1px solid #FF6347;
+    color: #FF6347; }
+  .toast--visible {
+    top: 100px;
+    visibility: visible;
+    opacity: 1; }

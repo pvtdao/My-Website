@@ -1,7 +1,7 @@
 .contact {
-  background-color: #000;
+  background-color: $black-color;
   padding: 20px 0 20px 0px;
-  color: #fff;
+  color: $white-color;
 
   @include responsive(Tablet) {
     border: 1px solid #151;
@@ -15,26 +15,8 @@
     position: relative;
   }
 
-  &__toast {
-    background: #fff;
-    padding: 15px;
-    font-size: 2rem;
-    background: red;
-    color: blue;
-    border-radius: $bdr-medium;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    position: absolute;
-    z-index: 1;
-    display: none;
-  }
-
   &__title {
-    @include title(#000, #fff) {
+    @include title($black-color, $white-color) {
       text-align: center;
     }
   }
@@ -48,7 +30,7 @@
     margin-top: 20px;
 
     &-error {
-      // border: 1px solid #fff;
+      // border: 1px solid $white-color;
       width: 70%;
       margin: 0 auto;
       // padding: 10px 0;
@@ -58,14 +40,22 @@
       background-color: $white-color;
       color: $black-color;
       font-weight: 600;
+
+      @include responsive(Tablet) {
+        width: 100%;
+      }
+
+      @include responsive(Mobile) {
+        width: 90%;
+      }
     }
   }
 
   &__input {
     position: relative;
     border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    border-bottom: 1px solid $white-color;
+    color: $white-color;
     background: transparent;
     outline: none;
     padding: 10px 0 5px 0;
@@ -96,9 +86,9 @@
     }
 
     &[type="button"] {
-      border: 1px solid #000;
-      background-color: #fff;
-      color: #000;
+      border: 1px solid $black-color;
+      background-color: $white-color;
+      color: $black-color;
       max-width: 100px;
       text-transform: uppercase;
       cursor: pointer;
@@ -131,7 +121,7 @@
     }
 
     &--item {
-      // border: 1px solid #fff;
+      // border: 1px solid $white-color;
       padding: 10px 0;
       transition: all 0.2s linear;
       &:hover {
@@ -147,7 +137,7 @@
 
     &--icon {
       font-size: 4rem;
-      color: #fff;
+      color: $white-color;
     }
   }
 
@@ -172,18 +162,18 @@
       align-items: center;
       justify-content: center;
 
-      @include responsive(SmallMobile) {
+      @include responsive(Mobile) {
         display: flex;
         flex-direction: column;
       }
 
       & span {
-        color: #fff;
+        color: $white-color;
         font-size: 3rem;
         font-family: "Montserrat", sans-serif;
         margin-left: 10px;
         -webkit-text-stroke: 1px #161616;
-        -webkit-text-fill-color: #fff;
+        -webkit-text-fill-color: $white-color;
         font-weight: 900;
 
         @include responsive(SmallMobile) {
@@ -224,12 +214,12 @@
     }
 
     & > span {
-      color: #fff;
+      color: $white-color;
       mix-blend-mode: difference;
       -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
   }
 }

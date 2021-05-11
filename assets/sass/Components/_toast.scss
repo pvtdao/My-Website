@@ -1,0 +1,44 @@
+.toast {
+  background: $white-color;
+  padding: 15px;
+  font-size: 2rem;
+
+  border-radius: $bdr-medium;
+  top: 100px;
+  left: 0%;
+  right: 0;
+
+  position: fixed;
+  margin-left: auto;
+  max-width: 400px;
+  z-index: 1;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, top 0.2s, visibility 0.2s;
+
+  @include responsive(Mobile) {
+    top: 30%;
+    transform: translateY(-50%);
+  }
+
+  & > span {
+    margin-left: 10px;
+  }
+
+  &--success {
+    border: 1px solid $green-color;
+    color: $green-color;
+  }
+
+  &--error {
+    border: 1px solid $light-red-color;
+    color: $light-red-color;
+  }
+
+  &--visible {
+    top: 100px;
+    visibility: visible;
+    opacity: 1;
+  }
+}
