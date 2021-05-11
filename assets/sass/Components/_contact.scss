@@ -2,6 +2,7 @@
   background-color: $black-color;
   padding: 20px 0 20px 0px;
   color: $white-color;
+  min-height: 100vh;
 
   @include responsive(Tablet) {
     border: 1px solid #151;

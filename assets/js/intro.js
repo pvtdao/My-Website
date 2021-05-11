@@ -45,10 +45,15 @@ nextButton.onclick = function (e) {
   });
 
   setTimeout(() => {
-    console.log("removed");
+    // console.log("removed");
     
     //Sau khi ấn explore thì cho scroll
     body[0].classList.remove("can-not-scroll");
     introSection.classList.add("intro-hidden");
   }, 2300);
+
+  setTimeout(() => {
+    introSection.parentElement.removeChild(introSection);
+    // console.log("delete intro dom");
+  }, 5000)
 };

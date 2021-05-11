@@ -1,0 +1,37 @@
+.loading-dots {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: none;
+
+  & > div {
+    width: 3rem;
+    height: 3rem;
+    background-color: $white-color;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-animation: bounce 1.5s infinite ease-in-out both;
+            animation: bounce 1.5s infinite ease-in-out both;
+  }
+
+  & .bounce {
+    &-1 {
+      -webkit-animation-delay: -0.3s;
+              animation-delay: -0.3s;
+    }
+
+    &-2 {
+      -webkit-animation-delay: -0.15s;
+              animation-delay: -0.15s;
+    }
+  }
+}

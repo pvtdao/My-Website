@@ -197,6 +197,7 @@
   }
 }
 
+// Skill section mobile
 @keyframes scrollingSkillMobile {
   0% {
     transform: translateX(0);
@@ -205,5 +206,27 @@
     transform: translateX(
       calc(-1 *#{$marquee-element-width-mb}*#{$marquee-element})
     );
+  }
+}
+
+//Loader dot
+@-webkit-keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
   }
 }

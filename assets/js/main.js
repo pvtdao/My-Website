@@ -1,4 +1,8 @@
 
+// let loader = document.querySelector(".loading-dots");
+// window.addEventListener("load", () => {
+//   loader.parentElement.removeChild(loader);
+// })
 
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init({

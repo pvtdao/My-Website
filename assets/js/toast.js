@@ -1,5 +1,6 @@
 const Toast = {
   init() {
+    // Thời gian để toast tự hide
     this.hideTimeout = null;
 
     //Create toast div
@@ -12,11 +13,17 @@ const Toast = {
     this.icon.className = "toast__icon";
     this.toast.appendChild(this.icon);
 
+    // Nội dung của toast
     this.content = document.createElement("span");
     this.toast.appendChild(this.content);
   },
+  // Hàm show, truyền vào content và status của toast là thành cong hay thất bại
   show(message, state) {
     clearTimeout(this.hideTimeout);
+
+    document.querySelector(".toast").onclick = () => {
+      this.toast.classList.remove("toast--visible");
+    }
 
     this.toast.className = "toast toast--visible";
 
@@ -24,15 +31,20 @@ const Toast = {
       this.toast.classList.add(`toast--${state}`);
       this.content.innerHTML = message;
 
-      if ((state = "success")) {
+      if (state == "success") {
         this.icon.classList.add("fa", "fa-check-circle");
       } else {
         this.icon.classList.add("fa", "fa-times-circle");
       }
     }
 
+    // Sau 3s thì tự tắt toast
     this.hideTimeout = setTimeout(() => {
       this.toast.classList.remove("toast--visible");
     }, 3000);
   },
 };
+
+Toast.init();
+
+function hideToast() {}
