@@ -159,7 +159,9 @@
     }
 
     &:hover {
-      cursor: pointer;
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆🏻</text></svg>")
+          16 0,
+        auto; /*!emojicursor.app*/
 
       -webkit-text-stroke: 2px #000;
       -webkit-text-fill-color: #fff; /*gecko*/ /*IE10*/ /*opera 11.10+*/
@@ -175,7 +177,6 @@
 
   // Nút next button, gồm mũi tên và chữ explore
   &__next {
-    cursor: pointer;
     position: absolute;
     left: 90%;
     top: 50%;
@@ -185,6 +186,10 @@
     justify-content: flex-end;
     opacity: 1;
     transition: background-color 0.3s linear;
+
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👉🏻</text></svg>")
+        16 0,
+      auto;
 
     @include responsive(Mobile) {
       // left: 55%;
@@ -198,13 +203,16 @@
     &-icon {
       color: rgba(255, 255, 255, 0.4);
       font-size: 5rem;
-      cursor: pointer;
       -webkit-text-stroke: 0.5px #fff;
       -webkit-text-fill-color: transparent;
       margin-right: 50px;
       transition: all 0.5s linear;
       -webkit-animation: slide-out 2s;
       animation: slide-out 2s;
+
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👉🏻</text></svg>")
+          16 0,
+        auto;
 
       @include responsive(Mobile) {
         // opacity: 0;

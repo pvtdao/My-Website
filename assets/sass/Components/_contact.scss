@@ -4,6 +4,10 @@
   color: $white-color;
   min-height: 100vh;
 
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📝</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+
   @include responsive(Tablet) {
     border: 1px solid #151;
   }
@@ -66,6 +70,10 @@
     margin: 20px 0;
     resize: none;
 
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📝</text></svg>")
+        16 0,
+      auto; /*!emojicursor.app*/
+
     &::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.5);
     }
@@ -95,11 +103,6 @@
       cursor: pointer;
       font-weight: 600;
       letter-spacing: 2px;
-
-      &:hover {
-        border-radius: 15px;
-        transition: all 0.2s linear;
-      }
     }
   }
 
