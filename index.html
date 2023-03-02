@@ -1,92 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0'"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0'" />
     <title>Personal Website</title>
 
     <link rel="icon" href="./assets/images/d.png" />
     <!-- normalize - reset css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <!-- Font from google -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <!-- Aos lib -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Swiper lib  -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- Các cái cần thiết -->
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/fonts/fontawesome-free-5.14.0-web/css/all.min.css"
-    />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.14.0-web/css/all.min.css" />
     <link rel="stylesheet" href="./assets/fonts/GilroyFont/stylesheet.css" />
     <link rel="stylesheet" href="./assets/fonts/Kontanter/stylesheet.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <!-- ------------------------------ -->
-  </head>
+</head>
 
-  <body class="custom-cursor-dark">
+<body class="custom-cursor-dark">
     <div class="intro custom-cursor-white">
-      <section class="intro__part-1 intro__part"></section>
-      <section class="intro__part-2 intro__part">
-        <!-- Wrapp -->
-        <div class="intro__container">
-          <!-- button -->
-          <div href="#" class="intro__next">
-            <i
-              class="fa fa-long-arrow-alt-right intro__next-icon"
-              aria-hidden="true"
-            ></i>
-            <span class="intro__next-text"> Explore </span>
-          </div>
+        <section class="intro__part-1 intro__part"></section>
+        <section class="intro__part-2 intro__part">
+            <!-- Wrapp -->
+            <div class="intro__container">
+                <!-- button -->
+                <div href="#" class="intro__next">
+                    <i class="fa fa-long-arrow-alt-right intro__next-icon" aria-hidden="true"></i>
+                    <span class="intro__next-text"> Explore </span>
+                </div>
 
-          <!-- fly in text -->
-          <div class="intro__content">
-            <span class="intro__text intro__text-1">P</span>
-            <span class="intro__text intro__text-2">v</span>
-            <span class="intro__text intro__text-3">t</span>
-            <span class="intro__text intro__text-4">d</span>
-          </div>
-        </div>
-      </section>
-      <section class="intro__part-3 intro__part"></section>
+                <!-- fly in text -->
+                <div class="intro__content">
+                    <span class="intro__text intro__text-1">P</span>
+                    <span class="intro__text intro__text-2">v</span>
+                    <span class="intro__text intro__text-3">t</span>
+                    <span class="intro__text intro__text-4">d</span>
+                </div>
+            </div>
+        </section>
+        <section class="intro__part-3 intro__part"></section>
     </div>
 
     <div class="loading-dots">
-      <div class="bounce-1"></div>
-      <div class="bounce-2"></div>
-      <div class="bounce-3"></div>
+        <div class="bounce-1"></div>
+        <div class="bounce-2"></div>
+        <div class="bounce-3"></div>
     </div>
 
     <!-- Main -->
     <div class="wrapper">
-      <header class="header">
-        <div class="grid wide">
-          <div class="header__container">
-            <span class="header__logo" onclick="goToTop()">PVTD</span>
-            <!-- <div class="header__button-menu" id="btn-menu">
+        <header class="header">
+            <div class="grid wide">
+                <div class="header__container">
+                    <span class="header__logo" onclick="goToTop()">PVTD</span>
+                    <!-- <div class="header__button-menu" id="btn-menu">
               <div class="header__line-1 header__line"></div>
               <div class="header__line-2 header__line"></div>
               <div class="header__line-3 header__line"></div>
               <div class="header__line-4 header__line"></div>
             </div> -->
 
-            <!-- <nav class="menu custom-cursor-white">
+                    <!-- <nav class="menu custom-cursor-white">
               <div class="menu__item menu__item-1">
                 <a href="#home" class="menu__item-link">Home</a>
                 <img class="menu__item-img" src="./assets/images/img-1.jpg" />
@@ -178,507 +161,300 @@
                 </div>
               </div>
             </nav> -->
-          </div>
-        </div>
-      </header>
-      <section class="home" id="home">
-        <div class="grid wide">
-          <div class="home__container">
-            <div class="home__content">
-              <p class="home__sub">
-                Hi, I’m <span>Dao Phan</span>, a newbie front end developer
-                driven by passion and curiosity. As a developer, I’m listening
-                to people and make complicated things understandable. While
-                coding, I try to keep things simple. I believe in lifelong
-                learning, a good feedback culture, and an open mind
-              </p>
-              <a href="#about" class="scroll-icon"></a>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="about" id="about">
-        <div class="grid wide">
-          <div class="about__container">
-            <div class="about__left">
-              <div class="about__left-content">
-                <div
-                  class="img-group img-group-2"
-                  data-aos="fade-up"
-                  data-aos-once="true"
-                >
-                  <img
-                    src="./assets/images/about-img-2.jpg"
-                    alt=""
-                    class="about__left-img about__left-img-3"
-                    onclick="getImg(this.src);"
-                  />
-                </div>
-                <div
-                  class="img-group img-group-1"
-                  data-aos="fade-up"
-                  data-aos-once="true"
-                >
-                  <img
-                    src="./assets/images/family.jpg"
-                    alt=""
-                    class="about__left-img about__left-img-1"
-                    onclick="getImg(this.src);"
-                  />
-                </div>
-                <div
-                  class="img-group img-group-4"
-                  data-aos="fade-up"
-                  data-aos-once="true"
-                >
-                  <img
-                    src="./assets/images/bae.jpg"
-                    alt=""
-                    class="about__left-img about__left-img-2"
-                    onclick="getImg(this.src);"
-                  />
-                </div>
-                <div
-                  class="img-group img-group-3"
-                  data-aos="fade-up"
-                  data-aos-once="true"
-                >
-                  <img
-                    src="./assets/images/about-img-3.jpg"
-                    alt=""
-                    class="about__left-img about__left-img-4"
-                    onclick="getImg(this.src);"
-                  />
-                </div>
-
-                <div id="large-content" onclick="closeImg();">
-                  <!-- <i class="fa fa-window-close" aria-hidden="true"></i> -->
-                  <img src="#" alt="" id="large-img" title="Click to close." />
-                </div>
-              </div>
-            </div>
-            <div class="about__right">
-              <div class="about__right-content">
-                <h2
-                  class="about__title"
-                  data-aos="fade-up"
-                  data-aos-once="true"
-                >
-                  hi there
-                </h2>
-                <p
-                  class="about__text"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-once="true"
-                >
-                  I’m Phan Vu Thanh Dao, but you can just call me Neil which is
-                  my English name. My life story goes a little like this:
-                </p>
-                <p
-                  class="about__text"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-once="true"
-                >
-                  I was born and grew up (currently live) in Ho Chi Minh City,
-                  Viet Nam. I am twenty-two years old and i am a student at
-                  University of Science - Vietnam National University Ho Chi
-                  Minh City at the moment.
-                </p>
-                <p
-                  class="about__text"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-once="true"
-                >
-                  My major is Information Technology. This major makes me feel
-                  that I have a superpower and I guess that a lot of you who
-                  study this major will feel the same way 🙊🙊
-                </p>
-                <p
-                  class="about__text"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-once="true"
-                >
-                  After learning Front-end, I became obsessed with creating
-                  beautiful UI/UX, so I always strive to create websites that
-                  balance beauty and ease of use. To do that, I have to practice
-                  everyday to improve my abilities and my coding skills and the
-                  most important thing that whatever I do, I do it fully!
-                </p>
-                <p
-                  class="about__text"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-once="true"
-                >
-                  Today, I make this website to introduce myself, what I have
-                  learned, and some of the things that I have made and done.
-                  Hope you guys like it and support me 💖
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="skill custom-cursor-white" id="skill">
-        <div class="grid wide">
-          <div class="skill__container">
-            <h1 class="skill__title">What's in my head</h1>
-            <div class="skill__marquee">
-              <ul class="skill__marquee-content">
-                <li class="skill__marquee-item">
-                  <i class="fab fa-html5"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-css3-alt"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-bootstrap"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-sass"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-js-square"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-node"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-react"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-github"></i>
-                </li>
-
-                <!-- Khúc này để lặp lại -->
-                <li class="skill__marquee-item">
-                  <i class="fab fa-html5"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-css3-alt"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-bootstrap"></i>
-                </li>
-                <li class="skill__marquee-item">
-                  <i class="fab fa-sass"></i>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="project" id="project">
-        <div class="grid wide">
-          <div class="project__container">
-            <h1 class="project__title" data-aos="fade-up" data-aos-once="true">
-              Featured projects
-            </h1>
-          </div>
-
-          <div class="project-slider" data-aos="fade-up" data-aos-once="true">
-            <div class="project-slider__wrp swiper-wrapper">
-              <div class="project-slider__item swiper-slide">
-                <div class="project-slider__img">
-                  <img
-                    src="./assets/images/project-ml.PNG"
-                    alt="Mai Lam English"
-                  />
-                  <img
-                    src="./assets/images/project-ml2.png"
-                    alt="Mai Lam English"
-                  />
-                </div>
-                <div class="project-slider__content">
-                  <span class="project-slider__code">4 September 2020</span>
-                  <div class="project-slider__title">Mai Lam English</div>
-                  <div class="project-slider__text">
-                    A landing page that i made for Mai Lam's english center to
-                    introduce his center.
-                  </div>
-                  <a
-                    href="https://pvtdao.github.io/MaiLamEnglish/"
-                    class="project-slider__button"
-                    target="_blank"
-                  >
-                    <span class="project-slider__button-text">
-                      Visit website
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="project-slider__item swiper-slide">
-                <div class="project-slider__img">
-                  <img src="assets/images/project-sp.PNG" alt="Shopee clone" />
-                  <img src="assets/images/project-sp2.png" alt="Shopee clone" />
-                </div>
-                <div class="project-slider__content">
-                  <span class="project-slider__code">9 October 2020</span>
-                  <div class="project-slider__title">Shopee Clone Website</div>
-                  <div class="project-slider__text">
-                    This website is a project of F8's course. I completed this
-                    project after finishing this course
-                  </div>
-                  <a
-                    href="https://pvtdao.github.io/Clone-Shopee/"
-                    class="project-slider__button"
-                    target="_blank"
-                  >
-                    <span class="project-slider__button-text">
-                      Visit website
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="project-slider__item swiper-slide">
-                <div class="project-slider__img">
-                  <img src="assets/images/project-portfolio.PNG" alt="" />
-                  <img src="assets/images/project-portfolio2.png" alt="" />
-                </div>
-                <div class="project-slider__content">
-                  <span class="project-slider__code">1 November 2020</span>
-                  <div class="project-slider__title">Portfolio Example</div>
-                  <div class="project-slider__text">
-                    I found this tutorial on Youtube so I decided to do it and I
-                    have learnt so much pretty things for my coding skills
-                  </div>
-                  <a
-                    href="https://pvtdao.github.io/Portfolio-Example/"
-                    class="project-slider__button"
-                    target="_blank"
-                  >
-                    <span class="project-slider__button-text">
-                      Visit website
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="project-slider__item swiper-slide">
-                <div class="project-slider__img">
-                  <img src="assets/images/project-psd.PNG" alt="" />
-                  <img src="assets/images/project-psd2.png" alt="" />
-                </div>
-                <div class="project-slider__content">
-                  <span class="project-slider__code">18 October 2020</span>
-                  <div class="project-slider__title">Landing page PSD file</div>
-                  <div class="project-slider__text">
-                    This website based on a PSD file. This is the first time i
-                    have tried to convert this PSD file into HTMl/CSS code.
-                  </div>
-                  <a
-                    href="https://pvtdao.github.io/Dont-Ignore-Your-Dream/"
-                    class="project-slider__button"
-                    target="_blank"
-                  >
-                    <span class="project-slider__button-text">
-                      Visit website
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="project-slider__item swiper-slide">
-                <div class="project-slider__img">
-                  <img src="assets/images/unify.png" alt="" />
-                  <img src="assets/images/unify-2.png" alt="" />
-                </div>
-                <div class="project-slider__content">
-                  <span class="project-slider__code">9 December 2020</span>
-                  <div class="project-slider__title">Unify agency</div>
-                  <div class="project-slider__text">
-                    I completed this landing page when I was a trainee at Arena
-                    Commerce company
-                  </div>
-                  <a
-                    href="https://pvtdao.github.io/Unify/app/"
-                    class="project-slider__button"
-                    target="_blank"
-                  >
-                    <span class="project-slider__button-text">
-                      Visit website
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-slider__pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact custom-cursor-white" id="contact">
-        <div class="grid wide">
-          <div class="contact__container">
-            <div class="contact__intro">
-              <h1
-                class="contact__title"
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-once="true"
-              >
-                Keep in touch
-              </h1>
-              <p
-                class="contact__text"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-once="true"
-              >
-                Whether you're interested in my website or just want to say
-                hello, I'd love to hear from you! ✌
-              </p>
-            </div>
-            <div class="contact__form">
-              <form
-                action=""
-                onsubmit="return validation(event)"
-                name="contact-form"
-                id="form"
-              >
-                <div class="row">
-                  <div class="contact__form-error"></div>
-                </div>
-                <div class="row">
-                  <div class="form-gr center-elm">
-                    <div class="form-gr-info">
-                      <input
-                        type="text"
-                        placeholder="May i know your name?"
-                        class="contact__input mgr-20"
-                        data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-once="true"
-                        name="name"
-                        id="name"
-                      />
-                      <input
-                        type="text"
-                        placeholder="And your email too ❣"
-                        class="contact__input"
-                        data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-once="true"
-                        name="mail"
-                        id="mail"
-                      />
+        </header>
+        <section class="home" id="home">
+            <div class="grid wide">
+                <div class="home__container">
+                    <div class="home__content">
+                        <p class="home__sub">
+                            Hi, I’m <span>Dao Phan</span>, a newbie front end developer driven by passion and curiosity. As a developer, I’m listening to people and make complicated things understandable. While coding, I try to keep things simple. I believe
+                            in lifelong learning, a good feedback culture, and an open mind
+                        </p>
+                        <a href="#about" class="scroll-icon"></a>
                     </div>
-                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="grid wide">
+                <div class="about__container">
+                    <div class="about__left">
+                        <div class="about__left-content">
+                            <div class="img-group img-group-2" data-aos="fade-up" data-aos-once="true">
+                                <img src="./assets/images/about-img-2.jpg" alt="" class="about__left-img about__left-img-3" onclick="getImg(this.src);" />
+                            </div>
+                            <div class="img-group img-group-1" data-aos="fade-up" data-aos-once="true">
+                                <img src="./assets/images/family.jpg" alt="" class="about__left-img about__left-img-1" onclick="getImg(this.src);" />
+                            </div>
+
+                            <div class="img-group img-group-3" data-aos="fade-up" data-aos-once="true">
+                                <img src="./assets/images/about-img-3.jpg" alt="" class="about__left-img about__left-img-4" onclick="getImg(this.src);" />
+                            </div>
+
+                            <div id="large-content" onclick="closeImg();">
+                                <!-- <i class="fa fa-window-close" aria-hidden="true"></i> -->
+                                <img src="#" alt="" id="large-img" title="Click to close." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__right-content">
+                            <h2 class="about__title" data-aos="fade-up" data-aos-once="true">
+                                hi there
+                            </h2>
+                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-once="true">
+                                I’m Phan Vu Thanh Dao, but you can just call me Neil which is my English name. My life story goes a little like this:
+                            </p>
+                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-once="true">
+                                I was born and grew up (currently live) in Ho Chi Minh City, Viet Nam. I am twenty-two years old and i am a student at University of Science - Vietnam National University Ho Chi Minh City at the moment.
+                            </p>
+                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-once="true">
+                                My major is Information Technology. This major makes me feel that I have a superpower and I guess that a lot of you who study this major will feel the same way 🙊🙊
+                            </p>
+                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-once="true">
+                                After learning Front-end, I became obsessed with creating beautiful UI/UX, so I always strive to create websites that balance beauty and ease of use. To do that, I have to practice everyday to improve my abilities and my coding skills and the most important
+                                thing that whatever I do, I do it fully!
+                            </p>
+                            <p class="about__text" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-once="true">
+                                Today, I make this website to introduce myself, what I have learned, and some of the things that I have made and done. Hope you guys like it and support me 💖
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skill custom-cursor-white" id="skill">
+            <div class="grid wide">
+                <div class="skill__container">
+                    <h1 class="skill__title">What's in my head</h1>
+                    <div class="skill__marquee">
+                        <ul class="skill__marquee-content">
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-bootstrap"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-sass"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-js-square"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-node"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-react"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-github"></i>
+                            </li>
+
+                            <!-- Khúc này để lặp lại -->
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-html5"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-css3-alt"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-bootstrap"></i>
+                            </li>
+                            <li class="skill__marquee-item">
+                                <i class="fab fa-sass"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="project">
+            <div class="grid wide">
+                <div class="project__container">
+                    <h1 class="project__title" data-aos="fade-up" data-aos-once="true">
+                        Featured projects
+                    </h1>
                 </div>
 
-                <div class="row">
-                  <div class="form-gr center-elm">
-                    <textarea
-                      placeholder="Message..."
-                      class="contact__input contact__textarea"
-                      data-aos="fade-up"
-                      data-aos-duration="1000"
-                      data-aos-once="true"
-                      name="message"
-                      id="message"
-                    ></textarea>
-                  </div>
+                <div class="project-slider" data-aos="fade-up" data-aos-once="true">
+                    <div class="project-slider__wrp swiper-wrapper">
+                        <div class="project-slider__item swiper-slide">
+                            <div class="project-slider__img">
+                                <img src="./assets/images/project-ml.PNG" alt="Mai Lam English" />
+                                <img src="./assets/images/project-ml2.png" alt="Mai Lam English" />
+                            </div>
+                            <div class="project-slider__content">
+                                <span class="project-slider__code">4 September 2020</span>
+                                <div class="project-slider__title">Mai Lam English</div>
+                                <div class="project-slider__text">
+                                    A landing page that i made for Mai Lam's english center to introduce his center.
+                                </div>
+                                <a href="https://pvtdao.github.io/MaiLamEnglish/" class="project-slider__button" target="_blank">
+                                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-slider__item swiper-slide">
+                            <div class="project-slider__img">
+                                <img src="assets/images/project-sp.PNG" alt="Shopee clone" />
+                                <img src="assets/images/project-sp2.png" alt="Shopee clone" />
+                            </div>
+                            <div class="project-slider__content">
+                                <span class="project-slider__code">9 October 2020</span>
+                                <div class="project-slider__title">Shopee Clone Website</div>
+                                <div class="project-slider__text">
+                                    This website is a project of F8's course. I completed this project after finishing this course
+                                </div>
+                                <a href="https://pvtdao.github.io/Clone-Shopee/" class="project-slider__button" target="_blank">
+                                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-slider__item swiper-slide">
+                            <div class="project-slider__img">
+                                <img src="assets/images/project-portfolio.PNG" alt="" />
+                                <img src="assets/images/project-portfolio2.png" alt="" />
+                            </div>
+                            <div class="project-slider__content">
+                                <span class="project-slider__code">1 November 2020</span>
+                                <div class="project-slider__title">Portfolio Example</div>
+                                <div class="project-slider__text">
+                                    I found this tutorial on Youtube so I decided to do it and I have learnt so much pretty things for my coding skills
+                                </div>
+                                <a href="https://pvtdao.github.io/Portfolio-Example/" class="project-slider__button" target="_blank">
+                                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-slider__item swiper-slide">
+                            <div class="project-slider__img">
+                                <img src="assets/images/project-psd.PNG" alt="" />
+                                <img src="assets/images/project-psd2.png" alt="" />
+                            </div>
+                            <div class="project-slider__content">
+                                <span class="project-slider__code">18 October 2020</span>
+                                <div class="project-slider__title">Landing page PSD file</div>
+                                <div class="project-slider__text">
+                                    This website based on a PSD file. This is the first time i have tried to convert this PSD file into HTMl/CSS code.
+                                </div>
+                                <a href="https://pvtdao.github.io/Dont-Ignore-Your-Dream/" class="project-slider__button" target="_blank">
+                                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-slider__item swiper-slide">
+                            <div class="project-slider__img">
+                                <img src="assets/images/unify.png" alt="" />
+                                <img src="assets/images/unify-2.png" alt="" />
+                            </div>
+                            <div class="project-slider__content">
+                                <span class="project-slider__code">9 December 2020</span>
+                                <div class="project-slider__title">Unify agency</div>
+                                <div class="project-slider__text">
+                                    I completed this landing page when I was a trainee at Arena Commerce company
+                                </div>
+                                <a href="https://pvtdao.github.io/Unify/app/" class="project-slider__button" target="_blank">
+                                    <span class="project-slider__button-text">
+                      Visit website
+                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-slider__pagination"></div>
                 </div>
-                <div class="row">
-                  <div
-                    class="form-gr center-elm"
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                    data-aos-once="true"
-                  >
-                    <button class="form-gr-button" type="submit">
+            </div>
+        </section>
+
+        <section class="contact custom-cursor-white" id="contact">
+            <div class="grid wide">
+                <div class="contact__container">
+                    <div class="contact__intro">
+                        <h1 class="contact__title" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            Keep in touch
+                        </h1>
+                        <p class="contact__text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                            Whether you're interested in my website or just want to say hello, I'd love to hear from you! ✌
+                        </p>
+                    </div>
+                    <div class="contact__form">
+                        <form action="" onsubmit="return validation(event)" name="contact-form" id="form">
+                            <div class="row">
+                                <div class="contact__form-error"></div>
+                            </div>
+                            <div class="row">
+                                <div class="form-gr center-elm">
+                                    <div class="form-gr-info">
+                                        <input type="text" placeholder="May i know your name?" class="contact__input mgr-20" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" name="name" id="name" />
+                                        <input type="text" placeholder="And your email too ❣" class="contact__input" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" name="mail" id="mail" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-gr center-elm">
+                                    <textarea placeholder="Message..." class="contact__input contact__textarea" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" name="message" id="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-gr center-elm" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                                    <button class="form-gr-button" type="submit">
                       <span>Send</span>
                     </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
-            <div class="contact__social">
-              <!-- <p class="contact__social--in">
+                    <div class="contact__social">
+                        <!-- <p class="contact__social--in">
                 More about me
               </p> -->
-              <ul class="contact__list">
-                <li
-                  class="contact__list--item"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-once="true"
-                >
-                  <a
-                    href="https://www.facebook.com/PhanVuThanhDao"
-                    target="_blank"
-                    class="contact__list--link"
-                  >
-                    <i
-                      class="
-                        fab
-                        fa-facebook-f
-                        contact__list--icon
-                        custom-cursor-white
-                      "
-                    ></i>
-                  </a>
-                </li>
-                <li
-                  class="contact__list--item"
-                  data-aos="zoom-in"
-                  data-aos-duration="1000"
-                  data-aos-once="true"
-                >
-                  <a
-                    href="https://github.com/pvtdao"
-                    target="_blank"
-                    class="contact__list--link"
-                  >
-                    <i
-                      class="
-                        fab
-                        fa-github
-                        contact__list--icon
-                        custom-cursor-white
-                      "
-                    ></i>
-                  </a>
-                </li>
-                <li
-                  class="contact__list--item"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  data-aos-once="true"
-                >
-                  <a
-                    href="https://www.instagram.com/_thanhdao_/"
-                    target="_blank"
-                    class="contact__list--link"
-                  >
-                    <i
-                      class="
-                        fab
-                        fa-instagram
-                        contact__list--icon
-                        custom-cursor-white
-                      "
-                    ></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                        <ul class="contact__list">
+                            <li class="contact__list--item" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                                <a href="https://www.facebook.com/PhanVuThanhDao" target="_blank" class="contact__list--link">
+                                    <i class="fab fa-facebook-f contact__list--icon custom-cursor-white"></i>
+                                </a>
+                            </li>
+                            <li class="contact__list--item" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                                <a href="https://github.com/pvtdao" target="_blank" class="contact__list--link">
+                                    <i class="fab fa-github contact__list--icon custom-cursor-white"></i>
+                                </a>
+                            </li>
+                            <li class="contact__list--item" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                                <a href="https://www.instagram.com/_thanhdao_/" target="_blank" class="contact__list--link">
+                                    <i class="fab fa-instagram contact__list--icon custom-cursor-white"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-            <div class="contact__copy-right">
-              <p class="contact__copy-right--content">
-                &copy; Copyright - 2021
-              </p>
-              <p class="contact__copy-right--content">
-                Design & Develop by <span>PVTD</span>
-              </p>
+                    <div class="contact__copy-right">
+                        <p class="contact__copy-right--content">
+                            &copy; Copyright - 2021
+                        </p>
+                        <p class="contact__copy-right--content">
+                            Design & Develop by <span>PVTD</span>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </div>
 
     <!-- <div class="toast toast--error" onclick="hideToast()">
@@ -696,16 +472,15 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/vaildation.js"></script>
     <!-- Emailjs -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function () {
-        emailjs.init("user_TyMxpx1mu4ws35L92uLuk");
-      })();
+        ;
+        (function() {
+            emailjs.init("user_TyMxpx1mu4ws35L92uLuk")
+        })()
     </script>
     <script src="./assets/js/toast.js"></script>
     <script src="./assets/js/intro.js"></script>
-  </body>
+</body>
+
 </html>
